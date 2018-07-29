@@ -211,6 +211,10 @@ form {
     font-size: 13px;
 }
 
+fieldset {
+    border-radius: 10px;
+}
+
 /**
 
 

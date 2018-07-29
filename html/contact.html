@@ -2,34 +2,34 @@
 <html lang="en">
 
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-            crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-        <link rel="stylesheet" type="text/css" href="/css/share.css">
-        <link rel="stylesheet" type="text/css" href="/css/menu.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    
-        <title>Have a dream too - Eline Wijns</title>
-    
-        <!--share-->
-        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-        <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
-        <script src="/js/share.js"></script>
-        <!--menu-->
-        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src="/js/menu.js"></script>
-    
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/share.css">
+    <link rel="stylesheet" type="text/css" href="/css/menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <title>Have a dream too - Eline Wijns</title>
+
+    <!--share-->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+    <script src="/js/share.js"></script>
+    <!--menu-->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="/js/menu.js"></script>
+
+</head>
+
 
 
 <body>
@@ -65,25 +65,25 @@
                         <fieldset>
                             <legend class="txt" id="contact"> CONTACT </legend>
                             <p class="txt ietsgroter">Dit is een contactpagina met enkele contactgegevens en een contactformulier. </p>
-                            <div class="form-group">
+                            <div class="">
                                 <label class="txt formulier" for="naam">Naam:</label>
                                 <input class="form-control" id="naam" name="naam" type="text" placeholder="Eline Wijns" required>
                             </div>
                             <br>
-                            <div class="form-group">
+                            <div class="">
                                 <label class="txt formulier" for="email">Email:</label>
                                 <input class="form-control txt" id="email" name="email" type="email" placeholder="Eline.Wijns@gmail.com" required>
                             </div>
                             <br>
-                            <div class="form-group">
+                            <div class="">
                                 <label class="txt formulier" for="website">Website:</label>
                                 <input class="form-control" id="website" name="website" type="text">
                             </div>
-                        </fieldset>
-                        <br>
-                        <fieldset>
-                            <legend class="txt formulier"> Commentaar : </legend>
-                            <textarea class="form-control" name="comm" rows="4" cols="40" placeholder="Wat wil je mij laten weten?" required></textarea>
+                            <div>
+                                <label class="txt formulier" for="commentaar"> Commentaar : </label>
+                                <textarea id="commentaar" name="commentaar" class="form-control" rows="4" cols="40" placeholder="Wat wil je mij laten weten?"
+                                    required></textarea>
+                            </div>
                         </fieldset>
                         <button id="send" class="btn btn-sm" type="submit" value="Verzenden">VERSTUREN »</button>
                     </form>
