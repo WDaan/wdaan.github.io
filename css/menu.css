@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Allan);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
 /* General styles */
 
 
@@ -40,16 +41,7 @@ header ul.nav li a:hover {
   background-color: #cccccc;
 }
 
-@media screen and (max-width: 600px) {
-  header ul.nav li {
-    float: none;
-    width: 100%;
-  }
 
-  header ul.nav li a {
-    height: 5px;
-  }
-}
 /* Style for header with active class name */
 header.active ul.nav li a {
   height: 70px;
@@ -58,13 +50,7 @@ header.active ul.nav li a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-  header.active ul.nav li a {
-    height: 50px;
-    line-height: 40px;
-    
-  }
-}
+
 /* Style for the plus button */
 button.toggle-nav {
   position: absolute;
@@ -109,15 +95,7 @@ header.active button.toggle-nav span {
   -moz-transform: rotate(270deg);
 }
 
-@media screen and (max-width: 600px) {
-  button.toggle-nav {
-    top: 15px;
-  }
 
-  header.active button.toggle-nav {
-    top: 150px;
-  }
-}
 /* Other styles */
 .loud {
   text-transform: uppercase;
@@ -127,3 +105,24 @@ strong {
   color: rgb(250, 250, 250);
 }
 
+/* DEPENDING ON SCREEN SIZE */
+@media screen and (max-width: 600px) {
+  header ul.nav li {
+    float: none;
+    width: 100%;
+  }
+
+  header ul.nav li a {
+    height: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button.toggle-nav {
+    top: 15px;
+  }
+
+  header.active button.toggle-nav {
+    top: 150px;
+  }
+}
