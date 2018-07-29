@@ -72,7 +72,7 @@
 body {
     margin-top: 20px;
     margin-bottom: 2px;
-    background: linear-gradient( rgba(255, 255, 255, 0.820), rgba(255, 255, 255, 0.820)), url(/maybe/little-stars.jpg);
+    background: linear-gradient( rgba(255, 255, 255, 0.820), rgba(255, 255, 255, 0.820)), url(/images/little-stars.jpg);
     background-size: 30%;
     background-attachment: fixed;
     zoom: 110%;
@@ -234,40 +234,4 @@ form {
 
 fieldset {
     border-radius: 10px;
-}
-
-/**
-
-
-            SHOP
-
-*/
-
-.boekcover {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 3px;
-}
-
-.spacer {
-    margin-top: 50px;
-}
-
-.kooplink {
-    color: red;
-}
-
-#klikbestel{
-    
-    margin-left : 10px;
-}
-
-.shoppanel {
-    background: #f3f3f3;
-    border-radius: 8px;
-    box-shadow: 0 0 40px -10px #000;
-    margin: 15px auto 0 auto;
-    padding: 10px 20px 25px;
-    max-width: 150%;
-    width : 90%;
 }
