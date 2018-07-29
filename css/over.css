@@ -1,0 +1,16 @@
+/**
+            Over
+
+*/
+
+#selfie {
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selfinfo {
+    margin-top: 20px;
+    font-size: 13px;
+}

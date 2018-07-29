@@ -104,6 +104,18 @@ input, textarea {
     box-sizing: border-box;
 }
 
+
+
+.panel {
+    background: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px 10px;
+    max-width: 150%;
+    width : 90%;
+}
+
 /**
             HOME
 
@@ -249,19 +261,3 @@ fieldset {
     margin-left : 10px;
 }
 
-/**
-            Over
-
-*/
-
-#selfie {
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.selfinfo {
-    margin-top: 20px;
-    font-size: 13px;
-}
