@@ -9,6 +9,7 @@ header {
   background-color: rgb(242, 95, 112);
   margin-bottom: 0px;
   border-radius: 5px;
+  box-shadow: 0 0 40px -10px #000;
 }
 
 header ul.nav {
