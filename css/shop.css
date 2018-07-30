@@ -124,9 +124,9 @@ body {
 /* COVER 2 */
 
 .cont-contactBtn2 {
-    height: 404px;
+    height: 304px;
     margin: 20px auto;
-    width: 404px;
+    width: 304px;
     position: relative;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
@@ -275,8 +275,8 @@ header {
     }
 
     .cont-contactBtn2 {
-        height: 505px;
-        width: 505px;
+        height: 405px;
+        width: 405px;
     }
     .cont-contactBtn2 .cont-flip2 .front2 {
         background-image: url(/images/boek2.jpg);
@@ -299,7 +299,7 @@ header {
     
     .bestel2 {
         text-align: center;
-        margin-top: 225px;
+        margin-top: 80px;
     }
     
     
