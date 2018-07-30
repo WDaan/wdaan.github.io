@@ -6,12 +6,14 @@
 
 .shopheader {
     background: #f3f3f3;
-    border-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
-    margin: 20px auto 0 auto;
-    padding: 2px 20px 1px;
+    margin: 0px 0px 0px 3px;
+    padding: 2px 20px 1px 20px;
     max-width: 150%;
     width: 90%;
+    text-align: left;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
@@ -90,6 +92,7 @@ body {
 
 .cont-contactBtn .cont-flip .front {
     background-image: url(/images/boek1.jpg);
+    background-size: 80% 
 }
 
 .cont-contactBtn .cont-flip .back {
@@ -217,12 +220,86 @@ header {
 
 /* DEPENDING ON SCREEN SIZE */
 @media screen and (max-width: 600px) {
+    .cont-contactBtn {
+        height: 310px;
+        width: 225px;
+    }
+    .cont-contactBtn .cont-flip .front {
+        background-image: url(/images/boek1.jpg);
+        background-size: 100% 
+    }
+
     .cont-contactBtn2 {
-        background-size: 300px 300px !important; 
-  }
+        height: 290px;
+        width: 290px;
+    }
+    .cont-contactBtn2 .cont-flip2 .front2 {
+        background-image: url(/images/boek2.jpg);
+        background-size: 100% 
+    }
 
 }
   @media screen and (min-width: 600px) {
+    .cont-contactBtn {
+        height: 500px;
+        width: 340px;
+    }
+    .cont-contactBtn .cont-flip .front {
+        background-image: url(/images/boek1.jpg);
+        background-size: 100% 
+    }
 
+    .cont-contactBtn2 {
+        height: 505px;
+        width: 505px;
+    }
+    .cont-contactBtn2 .cont-flip2 .front2 {
+        background-image: url(/images/boek2.jpg);
+        background-size: 100% 
+    }
     
+  }
+
+
+
+
+
+
+  /* INFO */
+
+h6 {
+    text-align: center;
+    margin-top: 16px;
+    margin-left: -35px;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    table-layout: fixed;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+    
+}
+
+table tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+}
+
+
+tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+
+
+  .wat {
+      background-color: rgb(242, 95, 112);
+      color: #fafafa;
   }
