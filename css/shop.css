@@ -327,6 +327,7 @@ button {
     width: 90px;
     margin-top: 50px;
     position: relative;
+    border-radius: 3px;
 }
 
 .btntxt {
