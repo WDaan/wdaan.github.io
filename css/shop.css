@@ -246,6 +246,16 @@ header {
             font-size: 13px;
         }
 
+        .bestel1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .bestel2 {
+            text-align: center;
+            margin-top: 55px;
+        }
+
 }
   @media screen and (min-width: 600px) {
     .cont-contactBtn {
@@ -273,6 +283,18 @@ header {
     .boekinfo {
         font-size: 15px;
     }
+
+
+    .bestel1 {
+        text-align: center;
+        margin-top: 140px;
+    }
+    
+    .bestel2 {
+        text-align: center;
+        margin-top: 155px;
+    }
+    
     
   }
 
@@ -298,35 +320,16 @@ h6 {
     text-align: justify;
 }
 
-
-.besteltxt {
-    position: absolute;
-    font-size: 13px;
-    text-align: center;
-    bottom: 35px;
-    left: 110px;
+button {
+    background-color: rgb(242,95,112);
+    border: none;
+    height: 45px;
+    width: 90px;
+    margin-top: 50px;
+    position: relative;
 }
 
-.besteltxt2 {
-    position: absolute;
-    font-size: 13px;
-    text-align: center;
-    bottom: 35px;
-    left: 210px;
-}
-
-
-.bestel{
-    text-align: center;
-    position: absolute;
-	bottom: 0px;
-    left: 90px;
-}
-
-
-.bestel2{
-    text-align: center;
-    position: absolute;
-	bottom: 0px;
-    left: 190px;
+.btntxt {
+    color : #fff;
+    font-family: 'Raleway', sans-serif;
 }
