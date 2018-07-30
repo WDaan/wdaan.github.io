@@ -39,6 +39,7 @@ header ul.nav li a {
 header ul.nav li a:hover {
   color: #fff;
   background-color: #cccccc;
+  border-radius: 2px;
 }
 
 
