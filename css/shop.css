@@ -1,31 +1,228 @@
-
 /**
 
             SHOP
 
 */
 
-.boekcover {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 3px;
-}
-
-.spacer {
-    margin-top: 50px;
-}
-
-#klikbestel{
-    
-    margin-left : 10px;
-}
-
-.shoppanel {
+.shopheader {
     background: #f3f3f3;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
-    margin: 15px auto 0 auto;
-    padding: 10px 20px 45px;
+    margin: 20px auto 0 auto;
+    padding: 2px 20px 1px;
     max-width: 150%;
-    width : 90%;
+    width: 90%;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+    background-color: #f6ede5;
+}
+
+.material-icons {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 22px;
+    height: 20px;
+    color: #cccccc;
+    background-color: #fafafa;
+    border: 1px solid #cccccc;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    padding-right: 3px;
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+
+.material-icons:hover {
+    color: #FFF;
+    background-color: rgb(242, 95, 112);
+    border: 1px solid #cccccc;
+}
+
+/* COVER 1 */
+
+
+.cont-contactBtn {
+    height: 500px;
+    width: 340px;
+    margin: 20px auto;
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+    box-shadow: 0 0 40px -10px #000;
+    border-radius: 10px;
+}
+
+.cont-contactBtn .cont-flip {
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+}
+
+.cont-contactBtn .cont-flip .front,
+.cont-contactBtn .cont-flip .back {
+    display: block;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.cont-contactBtn .cont-flip .front {
+    background-image: url(/images/boek1.jpg);
+}
+
+.cont-contactBtn .cont-flip .back {
+    background-color: #fff;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.cont-contactBtn .cont-flip.flipped {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.cont-contactBtn .close {
+    display: block;
+    height: 19px;
+    width: 19px;
+    background-image: url("https://i.imgur.com/WoKg12q.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 15px;
+    right: 3%;
+}
+
+/* COVER 2 */
+
+.cont-contactBtn2 {
+    height: 505px;
+    margin: 20px auto;
+    width: 505px;
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+    box-shadow: 0 0 40px -10px #000;
+    border-radius: 10px;
+}
+
+.cont-contactBtn2 .cont-flip2 {
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+}
+
+.cont-contactBtn2 .cont-flip2 .front2,
+.cont-contactBtn2 .cont-flip2 .back {
+    display: block;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.cont-contactBtn2 .cont-flip2 .front2 {
+    background-image: url(/images/boek2.jpg);
+}
+
+.cont-contactBtn2 .cont-flip2 .back {
+    background-color: #fff;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.cont-contactBtn .btn {
+    margin-top: 155px;
+}
+
+.cont-contactBtn2 .cont-flip2.flipped2 {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.cont-contactBtn2 .close2 {
+    display: block;
+    height: 19px;
+    width: 19px;
+    background-image: url("https://i.imgur.com/WoKg12q.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 15px;
+    right: 3%;
+}
+
+/******************************/
+
+
+
+/* EDITED MENU */
+
+header {
+    position: relative;
+}
+
+.menubar {
+    z-index: 999;
+}
+
+
+
+
+
+/* DEPENDING ON SCREEN SIZE */
+@media screen and (max-width: 600px) {
+    .cont-contactBtn2 {
+        background-size: 300px 300px !important; 
+  }
+
+}
+  @media screen and (min-width: 600px) {
+
+    
+  }

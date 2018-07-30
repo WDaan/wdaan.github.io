@@ -11,6 +11,9 @@ header {
   margin-bottom: 0px;
   border-radius: 5px;
   box-shadow: 0 0 40px -10px #000;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
 }
 
 header ul.nav {

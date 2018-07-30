@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="/images/logo-rounded.png" />
 
     <title>Have a dream too - Eline Wijns</title>
@@ -30,6 +30,8 @@
     <!--menu-->
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="/js/menu.js"></script>
+    <!--img flip-->
+    <script src="/js/shop.js"></script>
 
 </head>
 
@@ -62,26 +64,58 @@
                         </ul>
                     </header>
                 </div>
-                <div class="shoppanel">
-                    <div>
-                        <h3 class="txt"> SHOP</h3>
-                        <p id="klikbestel" class="txt ietsgroter">(klik op een cover om te bestellen)</p>
+                <main>
+                    <div class="shopheader">
+                        <h3 class="txt" style="text-align: center"> SHOP</h3>
                     </div>
-                    <div align="center">
-                        <h3 class="txt"> BOEK : "DE ONGEWENSTE PRINSES"</h3>
-                        <a href="https://www.boekscout.nl/shop2/auteur.php?aid=7074&amp;bid=8189" class="kooplink">
-                            <img id="homefoto" class="responsive boekcover" src="/images/boek1.jpg" alt="Cover De Ongewenste Prinses">
-                        </a>
-                    </div>
-                    <div align="center" class="spacer">
-                        <h3 class="txt"> DICHTBUNDEL: "REIS VAN HET EINDE NAAR HET BEGIN"</h3>
-                        </h3>
 
-                        <a href="https://www.boekscout.nl/shop2/boek.php?bid=8746" class="kooplink">
-                            <img id="homefoto" class="responsive boekcover" src="/images/boek2.jpg" alt="Cover Dichtenbundel">
-                        </a>
+
+                    <div class="cont-contactBtn">
+                        <div class="cont-flip">
+                            <div class="front">
+                                <i class="material-icons flip">
+                                    info
+                                </i>
+                            </div>
+                            <div class="back">
+                                <a href="#" class="flip close"></a>
+                                <h6> De ongewenste prinses</h6>
+                                <table style="border-style:solid">
+                                    <tr><td>Categorie</td><td>Young Adult</td></tr>
+                                    <tr><td>Uitvoering</td><td>Paperback</td></tr>
+                                    <tr><td>Verschijningsdatum</td><td>22-12-2017</td></tr>
+                                    <tr><td>Prijs</td><td>19,99€</td></tr>
+                                    <tr><td>BOL</td><td>BOEKSCOUT</td></tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+
+                    <div class="cont-contactBtn2">
+                            <div class="cont-flip2">
+                                <div class="front2">
+                                    <i class="material-icons flip2">
+                                        info
+                                    </i>
+                                </div>
+                                <div class="back">
+                                    <a href="#" class="flip2 close2"></a>
+                                    <h6>Reis van het einde naar het begin</h6>
+                                <table style="border-style:solid">
+                                    <tr><td>Categorie</td><td>Poëzie</td></tr>
+                                    <tr><td>Uitvoering</td><td>Paperback</td></tr>
+                                    <tr><td>Verschijningsdatum</td><td>29-06-2018</td></tr>
+                                    <tr><td>Prijs</td><td>15,99€</td></tr>
+                                    <tr><td>BOL</td><td>BOEKSCOUT</td></tr>
+                                </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                </main>
                 <footer>
                     <div id="socialShare">
                         <div class="socialBox pointer">
