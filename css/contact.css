@@ -3,7 +3,7 @@ body {
   background-color: #f6ede5;
 }
 
-a, p {
+#flipbuttxt, p {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -69,8 +69,8 @@ a, p {
 }
 
 .cont-contactBtn {
-  height: 359px;
-  margin: 50px auto;
+  height: 300px;
+  margin: 0px auto;
   width: auto;
   position: relative;
   -webkit-perspective: 800px;
@@ -101,6 +101,8 @@ a, p {
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .cont-contactBtn .cont-flip .front {
   background-color: rgb(242,95,112);
@@ -121,6 +123,7 @@ a, p {
   -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
+
 .cont-contactBtn .contact-form {
   padding: 0 10%;
   margin-top: 50px;
@@ -174,11 +177,25 @@ a, p {
   display: block;
   font-size: 15px;
   font-weight: normal;
-  margin: 0 auto;
+  margin: -10px auto auto auto;
   max-width: 280px;
   padding: 15px 0;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   width: 100%;
+}
+
+
+
+/* EDITED MENU */
+
+header {
+  position: relative;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.menubar {
+  z-index: 999;
 }

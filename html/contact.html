@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
 
-
+    <link rel="shortcut icon" href="/images/logo-rounded.png" />
 
     <title>Have a dream too - Eline Wijns</title>
 
@@ -49,7 +49,7 @@
                     <h2 class="txt">ELINE WIJNS</h2>
                 </div>
                 <div>
-                    <header>
+                    <header class="menubar">
                         <button class="toggle-nav">
                             <span>></span>
                         </button>
@@ -65,25 +65,24 @@
                             </li>
                         </ul>
                     </header>
-                </div>
-                <main>
                     <div class="cont-contactBtn">
                         <div class="cont-flip">
                             <div class="front">
-                                <a href="#" class="btn btn-white flip">Send Message</a>
+                                <a id="flipbuttxt" href="#" class="btn btn-white flip">Contacteer mij</a>
                             </div>
                             <div class="back">
                                 <a href="#" class="flip close"></a>
                                 <form class="contact-form" action="">
-                                    <input class="gutter" type="text" placeholder="Name">
-                                    <input type="text" placeholder="Company">
-                                    <input class="gutter" type="text" placeholder="Telephone">
-                                    <input type="text" placeholder="Email">
-                                    <textarea name="" id="" placeholder="Leave a message"></textarea>
+                                    <input class="gutter" type="text" name="naam" placeholder="Naam">                                
+                                    <input type="text" placeholder="Email" name="email">
+                                    <textarea name="message" id="" placeholder="Leave a message"></textarea>
                                     <input type="submit" value="Send">
                                 </form>
                             </div>
                         </div>
+                </div>
+                <main>
+                    
                 </main>
                 <footer>
                     <div id="socialShare">
