@@ -236,8 +236,6 @@ p {
     padding-left: 1px;
 }
 
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
