@@ -221,8 +221,8 @@ header {
 /* DEPENDING ON SCREEN SIZE */
 @media screen and (max-width: 600px) {
     .cont-contactBtn {
-        height: 310px;
-        width: 225px;
+        height: 380px;
+        width: 265px;
     }
     .cont-contactBtn .cont-flip .front {
         background-image: url(/images/boek1.jpg);
@@ -230,8 +230,8 @@ header {
     }
 
     .cont-contactBtn2 {
-        height: 290px;
-        width: 290px;
+        height: 340px;
+        width: 340px;
     }
     .cont-contactBtn2 .cont-flip2 .front2 {
         background-image: url(/images/boek2.jpg);
