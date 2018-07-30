@@ -12,7 +12,6 @@
     margin: 0px 0px 0px 3px;
     padding: 2px 20px 1px 20px;
     max-width: 150%;
-    width: 90%;
     text-align: left;
 }
 
@@ -125,9 +124,9 @@ body {
 /* COVER 2 */
 
 .cont-contactBtn2 {
-    height: 505px;
+    height: 404px;
     margin: 20px auto;
-    width: 505px;
+    width: 404px;
     position: relative;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
@@ -220,6 +219,10 @@ header {
 
 /* DEPENDING ON SCREEN SIZE */
 @media screen and (max-width: 600px) {
+    .shopheader{
+        width: 87%;
+    }
+    
     .cont-contactBtn {
         height: 380px;
         width: 265px;
@@ -258,6 +261,10 @@ header {
 
 }
   @media screen and (min-width: 600px) {
+    .shopheader{
+        width: 94%;
+    }
+    
     .cont-contactBtn {
         height: 500px;
         width: 340px;
