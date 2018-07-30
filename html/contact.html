@@ -31,7 +31,9 @@
     <!--menu-->
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="/js/menu.js"></script>
-
+    <!--formulier-->
+    <script src="/js/contact.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </head>
 
 
@@ -65,32 +67,23 @@
                     </header>
                 </div>
                 <main>
-                    <form  class="form" action="https://formspree.io/daan.wijns@ugent.be" method="POST">
-                        <fieldset>
-                            <legend class="txt" id="contact"> CONTACT </legend>
-                            <div class="">
-                                <label class="formulier" for="naam">Naam:</label>
-                                <input class="form-control" id="naam" name="naam" type="text" placeholder="Eline Wijns" required>
+                    <div class="cont-contactBtn">
+                        <div class="cont-flip">
+                            <div class="front">
+                                <a href="#" class="btn btn-white flip">Send Message</a>
                             </div>
-                            <br>
-                            <div class="">
-                                <label class="formulier" for="email">Email:</label>
-                                <input class="form-control txt" id="email" name="email" type="email" placeholder="eline.wijns@gmail.com" required>
+                            <div class="back">
+                                <a href="#" class="flip close"></a>
+                                <form class="contact-form" action="">
+                                    <input class="gutter" type="text" placeholder="Name">
+                                    <input type="text" placeholder="Company">
+                                    <input class="gutter" type="text" placeholder="Telephone">
+                                    <input type="text" placeholder="Email">
+                                    <textarea name="" id="" placeholder="Leave a message"></textarea>
+                                    <input type="submit" value="Send">
+                                </form>
                             </div>
-                            <br>
-                            <div class="">
-                                <label class="formulier" for="website">Website:</label>
-                                <input class="form-control" id="website" name="website" type="text">
-                            </div>
-                            <br>
-                            <div>
-                                <label class="formulier" for="commentaar"> Commentaar : </label>
-                                <textarea id="commentaar" name="commentaar" class="form-control" rows="4" cols="40" placeholder="Wat wil je mij laten weten?"
-                                    required></textarea>
-                            </div>
-                        </fieldset>
-                        <button id="send" class="btn btn-sm" type="submit" value="Verzenden">VERSTUREN »</button>
-                    </form>
+                        </div>
                 </main>
                 <footer>
                     <div id="socialShare">
