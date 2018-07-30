@@ -133,7 +133,6 @@ body {
   border: 1px solid #808080;
   font-size: 12px;
   padding: 10px 0;
-  text-transform: uppercase;
 }
 .cont-contactBtn .contact-form input[type="text"] {
   float: left;
