@@ -45,7 +45,7 @@ header ul.nav li a:hover {
 
 /* Style for header with active class name */
 header.active ul.nav li a {
-  height: 70px;
+  height: 60px;
   opacity: 1;
   line-height: 70px;
   cursor: pointer;
@@ -87,7 +87,7 @@ button.toggle-nav span {
 
 /* Style for the plus button when header has active classe name */
 header.active button.toggle-nav {
-  top: 70px;
+  top: 60px;
   background-color: #cccccc;
 }
 
@@ -116,14 +116,12 @@ strong {
   header ul.nav li a {
     height: 5px;
   }
-}
 
-@media screen and (max-width: 600px) {
   button.toggle-nav {
     top: 15px;
   }
 
   header.active button.toggle-nav {
-    top: 150px;
+    top: 180px;
   }
 }
