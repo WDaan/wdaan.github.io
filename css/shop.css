@@ -91,7 +91,7 @@ body {
 
 .cont-contactBtn .cont-flip .front {
     background-image: url(/images/boek1.jpg);
-    background-size: 80% 
+    background-repeat: no-repeat; 
 }
 
 .cont-contactBtn .cont-flip .back {
@@ -166,6 +166,7 @@ body {
 
 .cont-contactBtn2 .cont-flip2 .front2 {
     background-image: url(/images/boek2.jpg);
+    background-repeat: no-repeat;
 }
 
 .cont-contactBtn2 .cont-flip2 .back {
@@ -260,7 +261,7 @@ header {
         }
 
 }
-  @media screen and (min-width: 600px) and (max-width: 1000px) {
+  @media screen and (min-width: 600px) and (max-width: 4000px) {
     .shopheader{
         width: 91%;
     }
