@@ -237,7 +237,7 @@ header {
     }
 
     .boekinfo1 {
-        font-size: 70% !important;
+        font-size: 69% !important;
     }
 
     .boekinfo {
@@ -245,10 +245,11 @@ header {
     }
     .bestel1 {
         text-align: center;
+        margin-top: -5%;
     }
     .bestel2 {
         text-align: center;
-        margin-top: 1%;
+        margin-top: -3%;
     }
 }
 
