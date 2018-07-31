@@ -244,6 +244,7 @@ header {
     }
     .bestel2 {
         text-align: center;
+        margin-top: 20%
     }
 }
 
@@ -275,10 +276,11 @@ header {
     }
     .bestel1 {
         text-align: center;
+        margin-top: 40%
     }
     .bestel2 {
         text-align: center;
-
+        margin-top: 20%;
     }
 }
 
@@ -296,21 +298,22 @@ header {
         background-size: 100%
     }
     .cont-contactBtn2 {
-        height: 405px;
-        width: 405px;
+        height: 350px;
+        width: 350px;
     }
     .cont-contactBtn2 .cont-flip2 .front2 {
         background-image: url(/images/boek2.jpg);
         background-size: 100%
     }
     h6 {
-        font-size: 150%;
+        font-size: 130%;
     }
     .boekinfo {
         font-size: 15px;
     }
     .bestel1 {
         text-align: center;
+        margin-top: 50%;
     }
     .bestel2 {
         text-align: center;
@@ -322,12 +325,12 @@ header {
 
 h6 {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-left: -35px;
 }
 
 .boekinfo {
-    margin-top: 15px;
+    margin-top: 6px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: auto;
