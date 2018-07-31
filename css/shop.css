@@ -214,7 +214,7 @@ header {
 /* DEPENDING ON SCREEN SIZE */
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 450px) {
     .shopheader {
         width: 88%;
     }
@@ -285,7 +285,7 @@ header {
     }
 }
 
-@media screen and (min-width: 555px) and (max-width: 900px) {
+@media screen and (min-width: 455px) and (max-width: 900px) {
     .shopheader {
         width: 91%;
     }
