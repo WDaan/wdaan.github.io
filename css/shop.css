@@ -212,9 +212,49 @@ header {
 }
 
 /* DEPENDING ON SCREEN SIZE */
+@media screen and (max-width: 380px) {
+    .shopheader {
+        width: 88%;
+    }
+    .cont-contactBtn {
+        height: 335px;
+        width: 225px;
+    }
+    .cont-contactBtn .cont-flip .front {
+        background-image: url(/images/boek1.jpg);
+        background-size: 100%
+    }
+    .cont-contactBtn2 {
+        height: 260px;
+        width: 260px;
+    }
+    .cont-contactBtn2 .cont-flip2 .front2 {
+        background-image: url(/images/boek2.jpg);
+        background-size: 100%
+    }
+    h6 {
+        font-size: 100%;
+    }
+
+    .boekinfo1 {
+        font-size: 70% !important;
+    }
+
+    .boekinfo {
+        font-size: 11px;
+    }
+    .bestel1 {
+        text-align: center;
+    }
+    .bestel2 {
+        text-align: center;
+        margin-top: 1%;
+    }
+}
 
 
-@media screen and (max-width: 450px) {
+
+@media screen and (min-width: 385px) and (max-width: 450px) {
     .shopheader {
         width: 88%;
     }
@@ -272,6 +312,7 @@ header {
     h6 {
         font-size: 150%;
     }
+
     .boekinfo {
         font-size: 15px;
     }
