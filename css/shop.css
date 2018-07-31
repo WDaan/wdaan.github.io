@@ -25,14 +25,14 @@ body {
     margin-top: 5px;
     margin-right: 5px;
     width: 22px;
-    height: 20px;
+    height: 22px;
     color: #cccccc;
     background-color: #fafafa;
     border: 1px solid #cccccc;
     padding-top: 1px;
-    padding-bottom: 5px;
-    padding-left: 1px;
-    padding-right: 3px;
+    padding-bottom: 1.5px;
+    padding-left: 0px;
+    padding-right: 2px;
     border-radius: 22px;
     -moz-border-radius: 22px;
     -webkit-border-radius: 22px;
@@ -218,9 +218,9 @@ header {
 
 
 /* DEPENDING ON SCREEN SIZE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     .shopheader{
-        width: 87%;
+        width: 88%;
     }
     
     .cont-contactBtn {
@@ -260,9 +260,9 @@ header {
         }
 
 }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 600px) and (max-width: 1000px) {
     .shopheader{
-        width: 94%;
+        width: 91%;
     }
     
     .cont-contactBtn {
@@ -337,7 +337,14 @@ button {
     border-radius: 3px;
 }
 
+button:hover {
+    background-color: #cccccc;
+}
+
 .btntxt {
     color : #fff;
     font-family: 'Raleway', sans-serif;
 }
+
+
+
