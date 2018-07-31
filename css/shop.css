@@ -50,7 +50,7 @@ body {
 .cont-contactBtn {
     height: 500px;
     width: 340px;
-    margin: 20px auto;
+    margin: 30px auto;
     position: relative;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
@@ -124,7 +124,7 @@ body {
 
 .cont-contactBtn2 {
     height: 304px;
-    margin: 20px auto;
+    margin: 30px auto;
     width: 304px;
     position: relative;
     -webkit-perspective: 800px;
