@@ -225,15 +225,15 @@ header {
         background-size: 100%
     }
     .cont-contactBtn2 {
-        height: 260px;
-        width: 260px;
+        height: 240px;
+        width: 240px;
     }
     .cont-contactBtn2 .cont-flip2 .front2 {
         background-image: url(/images/boek2.jpg);
         background-size: 100%
     }
     h6 {
-        font-size: 100%;
+        font-size: 90%;
     }
 
     .boekinfo1 {
@@ -241,7 +241,7 @@ header {
     }
 
     .boekinfo {
-        font-size: 11px;
+        font-size: 10px;
     }
     .bestel1 {
         text-align: center;
