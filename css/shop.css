@@ -322,7 +322,7 @@ header {
 
 h6 {
     text-align: center;
-    margin-top: 19px;
+    margin-top: 15px;
     margin-left: -35px;
 }
 
@@ -333,6 +333,10 @@ h6 {
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+}
+
+.boekinfo1 {
+    font-size: 80%;
 }
 
 button {
