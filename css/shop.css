@@ -241,11 +241,9 @@ header {
     }
     .bestel1 {
         text-align: center;
-        margin-top: 40px;
     }
     .bestel2 {
         text-align: center;
-        margin-top: 55px;
     }
 }
 
@@ -277,17 +275,46 @@ header {
     }
     .bestel1 {
         text-align: center;
-        margin-top: 140px;
     }
     .bestel2 {
         text-align: center;
-        margin-top: 80px;
+
     }
 }
 
 @media screen and (min-width: 555px) and (max-width: 900px) {
     .shopheader {
         width: 91%;
+    }
+
+    .cont-contactBtn {
+        height: 500px;
+        width: 340px;
+    }
+    .cont-contactBtn .cont-flip .front {
+        background-image: url(/images/boek1.jpg);
+        background-size: 100%
+    }
+    .cont-contactBtn2 {
+        height: 405px;
+        width: 405px;
+    }
+    .cont-contactBtn2 .cont-flip2 .front2 {
+        background-image: url(/images/boek2.jpg);
+        background-size: 100%
+    }
+    h6 {
+        font-size: 150%;
+    }
+    .boekinfo {
+        font-size: 15px;
+    }
+    .bestel1 {
+        text-align: center;
+    }
+    .bestel2 {
+        text-align: center;
+
     }
 }
 
