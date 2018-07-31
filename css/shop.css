@@ -213,41 +213,6 @@ header {
 
 /* DEPENDING ON SCREEN SIZE */
 
-@media screen and (max-width: 500px) {
-    .shopheader {
-        width: 88%;
-    }
-    .cont-contactBtn {
-        height: 380px;
-        width: 265px;
-    }
-    .cont-contactBtn .cont-flip .front {
-        background-image: url(/images/boek1.jpg);
-        background-size: 100%
-    }
-    .cont-contactBtn2 {
-        height: 340px;
-        width: 340px;
-    }
-    .cont-contactBtn2 .cont-flip2 .front2 {
-        background-image: url(/images/boek2.jpg);
-        background-size: 100%
-    }
-    h6 {
-        font-size: 100%;
-    }
-    .boekinfo {
-        font-size: 9px;
-    }
-    .bestel1 {
-        text-align: center;
-    }
-    .bestel2 {
-        text-align: center;
-        margin-top: 0%
-    }
-}
-
 
 @media screen and (max-width: 550px) {
     .shopheader {
