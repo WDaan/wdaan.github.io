@@ -187,6 +187,11 @@
     border-bottom: .25rem solid #64a19d;
 }
 
+h2{
+    color : #fff;
+    border-bottom: 1px solid currentColor;
+}
+
 /*margin fix fullscreen 2de rij */
 
 @media (min-width:768px) {
@@ -453,3 +458,10 @@ footer {
     top: -10%;
     right: -10%;
 }
+
+
+
+/*------------extra pagina------------- */
+
+
+/*---------radio pagina-------------*/
