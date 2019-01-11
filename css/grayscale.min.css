@@ -261,6 +261,40 @@ footer {
         animation-name: none !important;
         visibility: visible !important;
     }
+
+    .card1::before {
+        content: "";
+        position: absolute;
+        width: 185%;
+        height: 275%;
+        background: #64a19d;
+        transform: rotate(0deg);
+        left: -110%;
+        top: 90%;
+    }
+
+    .card2::before{
+        content: "";
+        position: absolute;
+        width: 185%;
+        height: 175%;
+        background: #64a19d;
+        transform: rotate(-45deg);
+        right: -10%;
+        top: 20%;
+    }
+
+    .card1:hover::before {
+        animation: aaa 0.4s 1;
+        top: -10%;
+        left: -10%;
+    }
+
+    .card2:hover::before {
+        animation: bbb 0.4s 1;
+        top: -10%;
+        right: -10%;
+    }
 }
 
 .delay-1{
