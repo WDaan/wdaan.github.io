@@ -26,7 +26,7 @@
 
 </head>
 
-<body id="page-top" onload="startTime()">
+<body id="page-top" onload="startTime()" onScroll="scroll()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -93,27 +93,7 @@
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="../js/grayscale.min.js"></script>
-    <script>
-        function startTime() {
-            var today = new Date();
-            var h = today.getHours();
-            var m = today.getMinutes();
-            var s = today.getSeconds();
-            m = checkTime(m);
-            s = checkTime(s);
-            document.getElementById('Time').innerHTML =
-                h + ":" + m + ":" + s;
-            var t = setTimeout(startTime, 500);
-        }
-
-        function checkTime(i) {
-            if (i < 10) {
-                i = "0" + i
-            }; // add zero in front of numbers < 10
-            return i;
-        }
-    </script>
+    <script src="../js/blablabla.js"></script>
 
 </body>
 

@@ -23,6 +23,8 @@
   <link href="../css/grayscale.min.css" rel="stylesheet">
   <link href="../css/extra.css" rel="stylesheet">
   <link rel="icon" href="../img/paper-plane-icon.png">
+  <!-- WOW.js -->
+  <link rel="stylesheet" href="../css/animate.css">
 
 </head>
 
@@ -40,7 +42,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/html/radio.html">Radio</a>
@@ -54,14 +56,23 @@
   </nav>
 
   <!-- Header -->
+  <section id="Apps" class="contact-section bg-black">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0"></div>
+          <div class=" text-center">TEST</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Apps Section -->
-  <section id="Apps" class="contact-section bg-black">
+  <section id="Apps" class="contact-section bg-black pb" >
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-4 mb-3 mb-md-0">
           <a target="_blank" href="https://mijn.telenet.be/mijntelenet/oauth/callback.do?code=2ZlDe4hCQbYYu285xhwlcyHtjp6SFA4L&state=ee0f68f9-b211-4e2e-a89d-a930e4289470">
-            <div class="card card1 py-4 h-100">
+            <div class="card card1 py-4 h-100 wow fadeInRight">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">Telenet Routerconfig</h4>
                 <hr class="my-4 white">
@@ -71,35 +82,48 @@
           </a>
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
-            <a target="_blank" href="http://10.0.0.1">
-              <div class="card card1 py-4 h-100">
-                <div class="card-body text-center">
-                  <h4 class="text-uppercase m-0 txt">Netgear Routerconfig</h4>
-                  <hr class="my-4 white">
-                  <div class="small text-black-50 txt">RouterSettings van Netgear</div>
-                </div>
+          <a target="_blank" href="http://speedtest.telenet.be">
+            <div class="card card1 py-4 h-100 wow fadeInRight">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0 txt">Telenet Speedtest</h4>
+                <hr class="my-4 white">
+                <div class="small text-black-50 txt">Internet snelheid testen</div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <a target="_blank" href="http://10.0.0.1">
+            <div class="card card1 py-4 h-100 wow fadeInRight">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase m-0 txt">Netgear Routerconfig</h4>
+                <hr class="my-4 white">
+                <div class="small text-black-50 txt">RouterSettings van Netgear</div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
   <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50 ">
+  <footer class="bg-black small text-center text-white-50">
     <div class="container ">
       Ur a nosey one, aren't ya?
     </div>
   </footer>
- <!-- Bootstrap core JavaScript -->
- <script src="../vendor/jquery/jquery.min.js"></script>
- <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
- <!-- Plugin JavaScript -->
- <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
- <!-- Custom scripts for this template -->
- <script src="../js/grayscale.min.js"></script>
-
+  <!-- Custom scripts for this template -->
+  <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 </body>
 
 </html>

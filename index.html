@@ -19,13 +19,15 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
+  <!-- WOW.js -->
+  <link rel="stylesheet" href="css/animate.css">
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
   <link rel="icon" href="img/paper-plane-icon.png">
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onScroll="scroll()">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -65,11 +67,11 @@
   <!-- Apps Section -->
   <section id="Apps" class="contact-section bg-black">
     <div class="container">
+      <h2 class="text-uppercase mb-5 mx-auto text-center">Remote</h2>
       <div class="row">
-        <h2 class="text-uppercase mb-5 mx-auto text-center">Remote</h2>
         <div class="col-md-4 mb-3 mb-md-0">
           <a target="_blank" href="http://178.118.138.211">
-            <div class="card card1 py-4 h-100">
+            <div class="card card1 py-4 h-100 wow fadeInRight">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">FileRun</h4>
                 <hr class="my-4 white">
@@ -79,32 +81,8 @@
           </a>
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
-            <a target="_blank" href="http://178.118.138.211:32400">
-              <div class="card card1 py-4 h-100">
-                <div class="card-body text-center">
-                  <h4 class="text-uppercase m-0 txt">Plex</h4>
-                  <hr class="my-4 white">
-                  <div class="small text-black-50 txt">Films en Series streamen van overal</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <a target="_blank" href="http://178.118.138.211:8080/">
-            <div class="card card1 py-4 h-100">
-              <div class="card-body text-center">
-                <h4 class="text-uppercase m-0 txt">QBittorrent</h4>
-                <hr class="my-4 white">
-                <div class="small text-black-50 txt">Remote Downloaden van overal</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <h2 class="text-uppercase mt-5 mb-5 mx-auto text-center">Local</h2>
-        <div class="col-md-4 mb-3 mb-md-0">
-          <a target="_blank" href="https://app.plex.tv/desktop">
-            <div class="card card2 py-4 h-100">
+          <a target="_blank" href="http://178.118.138.211:32400">
+            <div class="card card1 py-4 h-100 wow fadeInRight">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">Plex</h4>
                 <hr class="my-4 white">
@@ -113,9 +91,10 @@
             </div>
           </a>
         </div>
+
         <div class="col-md-4 mb-3 mb-md-0">
-          <a target="_blank" href="http://10.0.0.11:8080">
-            <div class="card card2 py-4 h-100">
+          <a target="_blank" href="http://178.118.138.211:8080/">
+            <div class="card card1 py-4 h-100 wow fadeInRight">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">QBittorrent</h4>
                 <hr class="my-4 white">
@@ -124,39 +103,68 @@
             </div>
           </a>
         </div>
-        <div class="col-md-4 mb-3 mb-md-0 second_row">
-          <a target="_blank" href="http://10.0.0.11:8888/gui/">
-            <div class="card card2 py-4 h-100">
-              <div class="card-body text-center">
-                <h4 class="text-uppercase m-0 txt">Resilio</h4>
-                <hr class="my-4 white">
-                <div class="small text-black-50 txt">Bestanden syncroniseren (werkt enkel als je lokaal verbonden bent)</div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-
-
       </div>
     </div>
-  </section>
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Ur a nosey one, aren't ya?
-    </div>
-  </footer>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <section class="contact-section bg-black">
+      <div class="container">
+        <h2 class="text-uppercase mt-5 mb-5 mx-auto text-center">Local</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <a target="_blank" href="https://app.plex.tv/desktop">
+              <div class="card card2 py-4 h-100 wow fadeInRight">
+                <div class="card-body text-center">
+                  <h4 class="text-uppercase m-0 txt">Plex</h4>
+                  <hr class="my-4 white">
+                  <div class="small text-black-50 txt">Films en Series streamen van overal</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <a target="_blank" href="http://10.0.0.11:8080">
+              <div class="card card2 py-4 h-100 wow fadeInRight">
+                <div class="card-body text-center">
+                  <h4 class="text-uppercase m-0 txt">QBittorrent</h4>
+                  <hr class="my-4 white">
+                  <div class="small text-black-50 txt">Remote Downloaden van overal</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <a target="_blank" href="http://10.0.0.11:8888/gui/">
+              <div class="card card2 py-4 h-100">
+                <div class="card-body text-center wow fadeInRight">
+                  <h4 class="text-uppercase m-0 txt">Resilio</h4>
+                  <hr class="my-4 white">
+                  <div class="small text-black-50 txt">Bestanden syncroniseren (werkt enkel als je lokaal verbonden
+                    bent)</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Ur a nosey one, aren't ya?
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
-
+    <!-- Custom scripts for this template -->
+    <script src="js/blablabla.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 </body>
 
 </html>

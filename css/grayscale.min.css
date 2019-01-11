@@ -187,17 +187,9 @@
     border-bottom: .25rem solid #64a19d;
 }
 
-h2{
-    color : #fff;
+h2 {
+    color: #fff;
     border-bottom: 1px solid currentColor;
-}
-
-/*margin fix fullscreen 2de rij */
-
-@media (min-width:768px) {
-    .second_row {
-        margin-top: 1.2em;
-    }
 }
 
 /* ---------------card animations---------------*/
@@ -208,19 +200,7 @@ h2{
     transform: scale(1.03);
 }
 
-.card:hover .txt{
-    color : #fff !important;
-}
 
-
-.contact-section .card:hover .text-primary {
-    color: #fff !important;
-    border-color: #fff !important;
-}
-
-.contact-section .card:hover .white {
-    border-color: #fff !important;
-}
 
 /*----------------------------------------------*/
 
@@ -275,6 +255,23 @@ footer {
 
 /* ----------------- crazy animation ----------------- */
 
+/*-----------mobile version ---- */
+@media (max-width : 550px){
+    
+}
+
+
+/* ----- desktop version ----------*/
+
+.card:hover .txt {
+    color: #fff !important;
+    transition: .5s ease;
+}
+
+.contact-section .card:hover .white {
+    border-color: #fff !important;
+    transition: .5s ease;
+}
 
 
 .card {
@@ -284,7 +281,7 @@ footer {
     position: relative;
 }
 
-.card > div{
+.card>div {
     position: relative;
 }
 
@@ -292,14 +289,15 @@ footer {
     line-height: 90px;
     font-size: 26px;
     transition: 0.2s linear;
+
+
 }
 
 .card:hover i {
     transform: scale(1.3);
-    color: #fff;
 }
 
-@media (max-width:768px) {
+@media (max-width:768px) and (min-width : 500px) {
     .card1::before {
         animation: aaa_before 0.4s 1;
         content: "";
@@ -311,6 +309,7 @@ footer {
         left: -110%;
         top: 90%;
     }
+
     .card2::before {
         content: "";
         position: absolute;
@@ -371,9 +370,109 @@ footer {
         }
 
     }
+
+    .card1:hover::before {
+        animation: aaa 0.4s 1;
+        top: -10%;
+        left: -10%;
+    }
+
+    .card2:hover::before {
+        animation: bbb 0.4s 1;
+        top: -10%;
+        right: -10%;
+    }
 }
 
-@media (min-width:768px) {
+@media (min-width:770px) and (max-width : 990px) {
+
+    .card1::before {
+        animation: aaa_before 0.5s 1;
+        content: "";
+        position: absolute;
+        width: 220%;
+        height: 225%;
+        background: #64a19d;
+        transform: rotate(30deg);
+        left: -140%;
+        top: 90%;
+    }
+
+    .card2::before {
+        content: "";
+        position: absolute;
+        width: 220%;
+        height: 225%;
+        background: #64a19d;
+        transform: rotate(-30deg);
+        right: -140%;
+        top: 90%;
+        animation: bbb_before 0.5s 1;
+    }
+
+    @keyframes aaa {
+        0% {
+            left: -140%;
+            top: 90%;
+        }
+
+        100% {
+            top: -70%;
+            left: -100%;
+        }
+    }
+
+    @keyframes aaa_before {
+        0% {
+            top: -70%;
+            left: -10%;
+        }
+
+        100% {
+            left: -140%;
+            top: 90%;
+        }
+    }
+
+    @keyframes bbb {
+        0% {
+            right: -130%;
+            top: 90%;
+        }
+
+        100% {
+            top: -110%;
+            right: -70%;
+        }
+    }
+
+    @keyframes bbb_before {
+        0% {
+            top: -70%;
+            right: -10%;
+        }
+
+        100% {
+            right: -130%;
+            top: 90%;
+        }
+    }
+
+    .card1:hover::before {
+        animation: aaa 0.4s 1;
+        top: -70%;
+        left: -100%;
+    }
+
+    .card2:hover::before {
+        animation: bbb 0.4s 1;
+        top: -110%;
+        right: -70%;
+    }
+}
+
+
+@media (min-width:990px) {
     .card1::before {
         animation: aaa_before 0.5s 1;
         content: "";
@@ -405,15 +504,15 @@ footer {
         }
 
         100% {
-            top: -10%;
-            left: -10%;
+            top: -110%;
+            left: -100%;
         }
     }
 
     @keyframes aaa_before {
         0% {
-            top: -10%;
-            left: -10%;
+            top: -110%;
+            left: -90%;
         }
 
         100% {
@@ -421,47 +520,42 @@ footer {
             top: 90%;
         }
     }
+
     @keyframes bbb {
         0% {
-            right: -110%;
+            right: -130%;
             top: 90%;
         }
 
         100% {
-            top: -10%;
-            right: -10%;
+            top: -110%;
+            right: -90%;
         }
     }
 
     @keyframes bbb_before {
         0% {
-            top: -10%;
-            right: -10%;
+            top: -110%;
+            right: -90%;
         }
 
         100% {
-            right: -110%;
+            right: -130%;
             top: 90%;
         }
 
     }
+
+    .card1:hover::before {
+        animation: aaa 0.4s 1;
+        top: -110%;
+        left: -90%;
+    }
+
+    .card2:hover::before {
+        animation: bbb 0.4s 1;
+        top: -110%;
+        right: -90%;
+    }
 }
 
-.card1:hover::before {
-    animation: aaa 0.4s 1;
-    top: -10%;
-    left: -10%;
-}
-
-.card2:hover::before {
-    animation: bbb 0.4s 1;
-    top: -10%;
-    right: -10%;
-}
-
-
-
-/*------------extra pagina------------- */
-
-
-/*---------radio pagina-------------*/
