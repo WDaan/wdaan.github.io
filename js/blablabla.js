@@ -6,6 +6,16 @@ function scroll() {
     } else {
         $("#mainNav").removeClass("navbar-shrink");
     }
+
+
+        $('.card1').bind('inview', function (event, visible) {
+            if (visible == true) {
+                $(".card1").addClass("fadeInRight");
+            } else {
+                $(".card").removeClass("fadeInRight");
+            }
+        });
+    
 }
 
 function startTime() {
@@ -26,3 +36,30 @@ function checkTime(i) {
     }; // add zero in front of numbers < 10
     return i;
 }
+
+
+
+/* animation wnnr zichtbaar
+;(function($, win) {
+    $.fn.inViewport = function(cb) {
+       return this.each(function(i,el){
+         function visPx(){
+           var H = $(this).height(),
+               r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+           return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+         } visPx();
+         $(win).on("resize scroll", visPx);
+       });
+    };
+  }(jQuery, window));
+  
+  
+  
+  $("#daan").inViewport(function(px){
+      if(px) $(this).addClass("animated fadeInRigt") ;
+      else {
+          $(this).removeClass("animated fadeInRigt");
+      }
+  });
+
+  */
