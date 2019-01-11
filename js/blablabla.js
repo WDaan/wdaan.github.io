@@ -5,17 +5,7 @@ function scroll() {
         $("#mainNav").addClass("navbar-shrink");
     } else {
         $("#mainNav").removeClass("navbar-shrink");
-    }
-
-
-        $('.card1').bind('inview', function (event, visible) {
-            if (visible == true) {
-                $(".card1").addClass("fadeInRight");
-            } else {
-                $(".card").removeClass("fadeInRight");
-            }
-        });
-    
+    }   
 }
 
 function startTime() {

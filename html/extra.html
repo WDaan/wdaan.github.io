@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -32,7 +32,7 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
+    <div class="container" style="">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Extra</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,19 +60,19 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-4 mb-3 mb-md-0"></div>
-          <div class="text-white-50">TEST</div>
-        </div>
+        <div class="text-white-50">TEST</div>
       </div>
+    </div>
     </div>
   </section>
 
   <!-- Apps Section -->
-  <section id="Apps" class="contact-section bg-black pb" >
+  <section id="Apps" class="contact-section bg-black pb">
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-4 mb-3 mb-md-0">
           <a target="_blank" href="https://mijn.telenet.be/mijntelenet/oauth/callback.do?code=2ZlDe4hCQbYYu285xhwlcyHtjp6SFA4L&state=ee0f68f9-b211-4e2e-a89d-a930e4289470">
-            <div class="card card1 py-4 h-100 animated fadeInRight delay-1">
+            <div class="card card1 py-4 h-100">
               <div class="card-body text-center ">
                 <h4 class="text-uppercase m-0 txt">Telenet Routerconfig</h4>
                 <hr class="my-4 white">
@@ -83,7 +83,7 @@
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
           <a target="_blank" href="http://speedtest.telenet.be">
-            <div class="card card1 py-4 h-100 animated fadeInRight delay-2">
+            <div class="card card1 py-4 h-100">
               <div class="card-body text-center ">
                 <h4 class="text-uppercase m-0 txt">Telenet Speedtest</h4>
                 <hr class="my-4 white">
@@ -94,7 +94,7 @@
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
           <a target="_blank" href="http://10.0.0.1">
-            <div class="card card1 py-4 h-100 animated fadeInRight delay-3">
+            <div class="card card1 py-4 h-100">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">Netgear Routerconfig</h4>
                 <hr class="my-4 white">
@@ -120,12 +120,20 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="../js/blablabla.js";
+  <script src="../js/blablabla.js"></script>
   <script src="../js/grayscale.min.js"></script>
-  <script src="../js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+  <script>
+    var docWidth = document.documentElement.offsetWidth;
+
+    [].forEach.call(
+      document.querySelectorAll('*'),
+      function (el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el);
+        }
+      }
+    );
+  </script>
 </body>
 
 </html>
