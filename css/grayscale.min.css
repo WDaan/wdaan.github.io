@@ -256,10 +256,22 @@ footer {
 /* ----------------- crazy animation ----------------- */
 
 /*-----------mobile version ---- */
-@media (max-width : 550px){
-    
+@media (min-width : 550px){
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
 }
 
+.delay-1{
+    animation-delay: 0s;
+}
+.delay-2{
+    animation-delay: 0.2s;
+}
+.delay-3{
+    animation-delay: 0.3s;
+}
 
 /* ----- desktop version ----------*/
 

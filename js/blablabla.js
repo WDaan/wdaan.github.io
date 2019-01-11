@@ -1,3 +1,5 @@
+//Fire it when the page first loads:
+
 function scroll() {
     if ($("#mainNav").offset().top > 0) {
         $("#mainNav").addClass("navbar-shrink");
