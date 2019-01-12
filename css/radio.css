@@ -6,3 +6,8 @@
 
 #stationbtns {
 }
+
+.selected{
+    background-color: #fff !important;
+    color: #64a19d !important;
+}
