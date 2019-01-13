@@ -51,16 +51,16 @@ function STUBRU() {
     $('#STUBRU').addClass("selected");
 }
 
-function KLARA() {
-    $('#radio').attr('src', 'http://icecast.vrtcdn.be/klara-high.mp3');
+function RHR() {
+    $('#radio').attr('src', 'http://stream.rhr.fm/');
     reset_selected();
-    $('#KLARA').addClass("selected");
+    $('#RHR').addClass("selected");
 }
 
-function JOE() {
-    $('#radio').attr('src', 'http://icecast-qmusic.cdp.triple-it.nl/JOEfm_be_live_128.mp3');
+function SLAM_HardStyle() {
+    $('#radio').attr('src', 'http://streaming.slam.nl/web11_mp3	');
     reset_selected();
-    $('#JOE').addClass("selected");
+    $('#SLAM!_HardStyle').addClass("selected");
 }
 
 function reset_selected() {
