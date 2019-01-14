@@ -25,8 +25,8 @@ var QMUSIC = {
     url: 'http://icecast-qmusic.cdp.triple-it.nl/Qmusic_be_live_128.mp3'
 };
 
-var QMUSIC_NONSTOP = {
-    name: 'QMUSIC_NONSTOP',
+var Q_NONSTOP = {
+    name: 'Q_NONSTOP',
     url: 'http://icecast-qmusic.cdp.triple-it.nl/Qmusic_be_non-stop_128.mp3'
 };
 
