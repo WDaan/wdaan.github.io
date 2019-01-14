@@ -26,7 +26,7 @@
 
 </head>
 
-<body id="page-top" onload="startTime()" onscroll="scroll()">
+<body id="page-top" onload="startTime(), init_stations()" onscroll="scroll()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -61,7 +61,6 @@
         <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
                 <h1 class="mx-auto my-0 text-uppercase" id="Time"></h1>
-
             </div>
         </div>
     </header>
@@ -76,46 +75,9 @@
                 </div>
             </div>
             <div class="row">
-                <div id="stationbtns" class="row col mb-2 mt-1 m-1">
-                    <div class="col-md- m-1" onclick="set_station(TOPRADIO)">
-                        <button id="TOPRADIO" class="btn btn-primary p-3 jaja">TOPRADIO</button>
-                    </div>
-                    <div class="col-md- m-1" onclick="set_station(TOPSELECTION)">
-                        <button id="TOPSELECTION" class="btn btn-primary p-3">TOPSELECTION</button>
-                    </div>
-                    <div class=" col-md- m-1" onclick="set_station(QMUSIC)">
-                        <button id="QMUSIC" class="btn btn-primary p-3">QMUSIC</button>
-                    </div>
-                    <div class=" col-md- m-1" onclick="set_station(Q_NONSTOP)">
-                        <button id="Q_NONSTOP" class="btn btn-primary p-3">Q_NONSTOP</button>
-                    </div>
-                    <div class=" col-md- m-1" onclick="set_station(MNM)">
-                        <button id="MNM" class="btn btn-primary p-3">MNM</button>
-                    </div>
-                    <div class="col-md- m-1" onclick="set_station(MNM_HITS)">
-                        <button id="MNM_HITS" class="btn btn-primary p-3">MNM_HITS</button>
-                    </div>
-                    <div class="col-md- m-1" onclick="set_station(MNM_URBANICE)">
-                        <button id="MNM_URBANICE" class="btn btn-primary p-3">MNM_URBANICE</button>
-                    </div>
-                    <div class="col-md- m-1" onclick="set_station(STUBRU)">
-                        <button id="STUBRU" class="btn btn-primary p-3">STUBRU</button>
-                    </div>
-                    <div class="col-md- m-1" onclick="set_station(Q_DANCE)">
-                        <button id="Q_DANCE" class="btn btn-primary p-3">Q_DANCE</button>
-                    </div>
-                    <div class="col-md- m-1" onclick="set_station(RHR)">
-                        <button id="RHR" class="btn btn-primary p-3">RHR</button>
-                    </div>
-                    <div class="col-md- m-1" onclick="set_station(SLAM_HardStyle)">
-                        <button id="SLAM_HardStyle" class="btn btn-primary p-3">SLAM!_HardStyle</button>
-                    </div>
-                    <div class="col-md- m-1" onclick="set_station(DANCE_UK)">
-                        <button id="DANCE_UK" class="btn btn-primary p-3">DANCE_UK</button>
-                    </div>
+                <div id="stationbtns" class="row col mb-2 mt-1 m-1">                    
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <!-- Footer -->
