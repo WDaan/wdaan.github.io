@@ -1,4 +1,14 @@
 function init_stations() {
+  /*alfabetisch sorteren */
+  station_array.sort(function(a, b) {
+    var nameA = a.name,
+      nameB = b.name;
+    if (nameA < nameB)
+      //sort string ascending
+      return -1;
+    if (nameA > nameB) return 1;
+    return 0; //default return value (no sorting)
+  });
   var i;
   for (i = 0; i < station_array.length; i++) {
     var div = document.createElement("div");
@@ -62,8 +72,8 @@ var station_array = [
     name: "STUBRU",
     url: "http://icecast.vrtcdn.be/stubru-high.mp3"
   }),
-  (Q_DANCE = {
-    name: "Q_DANCE",
+  (QMUSIC_DANCE = {
+    name: "QMUSIC_DANCE",
     url: "http://icecast-qmusic.cdp.triple-it.nl/Qmusic_be_dance_128.mp3"
   }),
   (RHR = {
@@ -77,5 +87,38 @@ var station_array = [
   (DANCE_UK = {
     name: "DANCE_UK",
     url: "http://212.83.150.15:8022/stream/"
+  }),
+  (DNB_RADIO = {
+    name: "DNB_RADIO",
+    url: "http://source.dnbradio.com/dnbradio_main.mp3"
+  }),
+  (TRAP_FM = {
+    name: "TRAP_FM",
+    url: "http://stream.trap.fm:6004/;stream.mp3"
+  }),
+  (DUBBASE_FM = {
+    name: "DUBBASE_FM",
+    url: "http://stream.dubbase.fm:7004/;stream.mp3"
+  }),
+  (DNB_FM = {
+    name: "DNB_FM",
+    url: "http://stream.drumandbass.fm:9004/;stream.mp3"
+  }),
+  (OUR_HOUSE_FM = {
+    name: "OUR_HOUSE_FM",
+    url: "http://shoutcast.ourhouse.fm:8055/;stream1.mp3"
+  }),
+  (SLAM = {
+    name: "SLAM",
+    url: "https://stream.slam.nl/slam_mp3?allradio.nl&1547484924"
+  }),
+  (DEEP_RADIO = {
+    name: "DEEP_RADIO",
+    url: "http://stream.deep.radio/sd?allradio.nl&1547485103"
+  }),
+  (Q_DANCE_RADIO = {
+    name: "Q_DANCE_RADIO",
+    url: "http://19993.live.streamtheworld.com/Q_DANCEAAC.aac"
   })
 ];
+
