@@ -29,16 +29,20 @@ body{
     padding: .9rem 0
 }
 
+.nav-item-spacing{
+    margin-bottom: 15px !important;
+}
+
 #mainNav .navbar-nav .nav-item:hover {
     color: fade(white, 80%);
     outline: 0;
-    background-color: transparent
+    background-color: transparent;
 }
 
 #mainNav .navbar-nav .nav-item:active,
 #mainNav .navbar-nav .nav-item:focus {
     outline: 0;
-    background-color: transparent
+    background-color: transparent;
 }
 
 @media (min-width:992px) {
@@ -53,22 +57,22 @@ body{
 
     #mainNav .navbar-brand {
         padding: .5rem 0;
-        color: rgba(255, 255, 255, .5)
+        color: rgba(255, 255, 255, .5);
     }
 
-    #mainNav .nav-link {
+    #mainNav .navbar-item {
         -webkit-transition: none;
         transition: none;
         padding: 2rem 1.5rem;
-        color: rgba(255, 255, 255, .5)
+        color: rgba(255, 255, 255, .5);
     }
 
-    #mainNav .nav-link:hover {
-        color: rgba(255, 255, 255, .75)
+    #mainNav .navbar-item:hover {
+        color: rgba(255, 255, 255, .75);
     }
 
-    #mainNav .nav-link:active {
-        color: #fff
+    #mainNav .navbar-item:active {
+        color: #fff;
     }
 
     #mainNav.navbar-shrink {
@@ -79,21 +83,21 @@ body{
         color: #161616
     }
 
-    #mainNav.navbar-shrink .nav-link {
+    #mainNav.navbar-shrink .navbar-item {
         color: #161616;
         padding: 1.5rem 1.5rem 1.25rem;
-        border-bottom: .25rem solid transparent
+        border-bottom: .25rem solid transparent;
     }
 
-    #mainNav.navbar-shrink .nav-link:hover {
-        color: #64a19d
+    #mainNav.navbar-shrink .navbar-item:hover {
+        color: #64a19d;
     }
 
-    #mainNav.navbar-shrink .nav-link:active {
-        color: #467370
+    #mainNav.navbar-shrink .navbar-item:active {
+        color: #467370;
     }
 
-    #mainNav.navbar-shrink .nav-link.active {
+    #mainNav.navbar-shrink .navbar-item.active {
         color: #64a19d;
         outline: 0;
         border-bottom: .25rem solid #64a19d

@@ -27,8 +27,6 @@ function checkTime(i) {
     return i;
 }
 
-
-
 /* animation wnnr zichtbaar
 ;(function($, win) {
     $.fn.inViewport = function(cb) {

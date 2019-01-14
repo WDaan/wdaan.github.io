@@ -79,39 +79,3 @@ var station_array = [
     url: "http://212.83.150.15:8022/stream/"
   })
 ];
-
-/*
-
-var div = document.createElement("div");
-    div.classList.add("col-md-");
-    div.classList.add("m-1");
-    var functionname = "set_station(" + station_array.TOPRADIO.name + ")";
-    div.setAttribute("onclick", functionname);
-    var btn = document.createElement("button");
-    btn.classList.add("btn");
-    btn.classList.add("btn-primary");
-    btn.classList.add("p-3");
-    btn.innerHTML = station_array.TOPRADIO.name;
-    btn.id = station_array.TOPRADIO.name;
-    div.appendChild(btn);
-
-    $("#stationbtns").append(div);
-
-
-
-
-
-     TOPRADIO,
-  TOPSELECTION,
-  QMUSIC,
-  Q_NONSTOP,
-  MNM,
-  MNM_HITS,
-  MNM_URBANICE,
-  STUBRU,
-  Q_DANCE,
-  RHR,
-  SLAM_HardStyle,
-  DANCE_UK
-
-    */
