@@ -5,7 +5,7 @@ function scroll() {
         $("#mainNav").addClass("navbar-shrink");
     } else {
         $("#mainNav").removeClass("navbar-shrink");
-    }   
+    }
 }
 
 function startTime() {
