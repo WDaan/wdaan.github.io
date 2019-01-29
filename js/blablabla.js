@@ -65,7 +65,8 @@ function ping(url) {
     http.onreadystatechange = function () {
         if (http.readyState == 4 && http.status == 200) {
             console.log("Server online! ^__^");
-            window.open(url);
+            let newTab = window.open();
+            newTab.location.href = url;
         }
     };
     try {
