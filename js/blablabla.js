@@ -33,8 +33,8 @@ function checkTime(i) {
 let info;
 
 
-$.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function (data) {
-    let ip = data.geoplugin_request;
+$.getJSON('https://ipapi.co/json/', function (data) {
+    var ip = data.ip;
     get_ip(ip);
 });
 
