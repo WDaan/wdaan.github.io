@@ -1,4 +1,4 @@
-body{
+body {
     background: #161616;
 }
 
@@ -8,14 +8,19 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
 }
+
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
+
 /*---------------------------------------*/
 
 #mainNav {
@@ -45,7 +50,7 @@ html {
     padding: .9rem 0
 }
 
-.nav-item-spacing{
+.nav-item-spacing {
     margin-bottom: 15px !important;
 }
 
@@ -281,19 +286,21 @@ footer {
 /* ----------------- crazy animation ----------------- */
 
 /*-----------mobile version ---- */
-@media (max-width : 550px){
-    .card:hover{
+@media (max-width : 550px) {
+    .card:hover {
         background: #64a19d !important;
     }
 }
 
-.delay-1{
+.delay-1 {
     animation-delay: 0s;
 }
-.delay-2{
+
+.delay-2 {
     animation-delay: 0.2s;
 }
-.delay-3{
+
+.delay-3 {
     animation-delay: 0.3s;
 }
 
@@ -595,3 +602,8 @@ footer {
     }
 }
 
+
+
+.hide {
+    display: none;
+}

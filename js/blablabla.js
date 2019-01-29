@@ -27,6 +27,48 @@ function checkTime(i) {
     return i;
 }
 
+let info;
+/*ip loggen*/
+
+
+$.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function (data) {
+    let ip = data.geoplugin_request;
+    get_ip(ip);
+});
+
+function check_ip() {
+    if (info !== '178.118.138.211') {
+        $("#local").addClass("hide");
+    }
+    else {
+        $("#local").removeClass("hide");
+    }
+}
+
+function get_ip(ip) {
+    info = ip;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* animation wnnr zichtbaar
 ;(function($, win) {
     $.fn.inViewport = function(cb) {
