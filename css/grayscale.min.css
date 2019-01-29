@@ -254,7 +254,7 @@ body {
 }
 
 a {
-    color: #64a19d
+    color: #64a19d;
 }
 
 a:focus,
@@ -606,4 +606,8 @@ footer {
 
 .hide {
     display: none;
+}
+
+.txt{
+    color :   #64a19d;
 }

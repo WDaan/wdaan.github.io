@@ -27,8 +27,10 @@ function checkTime(i) {
     return i;
 }
 
+
+
+/*remove local when not connected from my home*/
 let info;
-/*ip loggen*/
 
 
 $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function (data) {
@@ -39,8 +41,7 @@ $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function (data) {
 function check_ip() {
     if (info !== '178.118.138.211') {
         $("#local").addClass("hide");
-    }
-    else {
+    } else {
         $("#local").removeClass("hide");
     }
 }
@@ -52,10 +53,32 @@ function get_ip(ip) {
 
 
 
+function ping(url) {
+
+    var http = new XMLHttpRequest();
+
+    http.onerror = function (e) {
+        console.log("Server offline :/ \nZeg da Daan zijn pc moe aanzetten! :p");
+    };
+
+    http.open("GET", "http://178.118.138.211:80", /*async*/ true);
+    http.onreadystatechange = function () {
+        if (http.readyState == 4 && http.status == 200) {
+            console.log("Server online! ^__^");
+            window.open(url);
+        }
+    };
+    try {
+        http.send(null);
+    } catch (exception) {
+
+    }
+}
 
 
-
-
+function open_page(url) {
+    ping(url);
+}
 
 
 
