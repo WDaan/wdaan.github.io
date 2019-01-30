@@ -58,7 +58,7 @@ function ping(url) {
     var http = new XMLHttpRequest();
 
     http.onerror = function (e) {
-        console.log("Server offline :/ \nZeg da Daan zijn pc moe aanzetten! :p");
+        alert("Server offline :/ \nZeg da Daan zijn pc moe aanzetten! :p");
     };
 
     http.open("GET", "http://178.118.138.211:80", /*async*/ true);
