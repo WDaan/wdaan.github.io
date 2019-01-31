@@ -25,7 +25,7 @@
 
 </head>
 
-<body id="page-top" onscroll="scroll()" onload="check_ip()">
+<body id="page-top" onscroll="scroll()" onload="check_server()">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -71,8 +71,8 @@
       <h2 class="text-uppercase mb-5 mx-auto text-center">Remote</h2>
       <div class="row">
         <div class="col-md-4 mb-3 mb-md-0">
-          <a onclick="open_page('http://178.118.138.211?page=login&action=login&nonajax=1&username=woofy&password=woofyiscute')">
-            <div id="daan" class="card card1 py-4 h-100">
+          <a id="FileRun">
+            <div class="card card1 py-4 h-100">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">FileRun</h4>
                 <hr class="my-4 white">
@@ -82,7 +82,7 @@
           </a>
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
-          <a onclick="open_page('http://178.118.138.211:32400')">
+          <a id="Plex">
             <div class="card card1 py-4 h-100">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">Plex</h4>
@@ -93,7 +93,7 @@
           </a>
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
-          <a onclick="open_page('http://178.118.138.211:9091/')">
+          <a id="Transmission">
             <div class="card card1 py-4 h-100">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">Transmission</h4>
@@ -111,7 +111,7 @@
       <h2 class="text-uppercase mt-5 mb-5 mx-auto text-center">Local</h2>
       <div class="row">
         <div class="col-md-4 mb-3 mb-md-0">
-          <a onclick="open_page('https://app.plex.tv/desktop')">
+          <a id="Plex_local">
             <div class="card card2 py-4 h-100">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">Plex</h4>
@@ -122,7 +122,7 @@
           </a>
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
-          <a onclick="open_page('http://10.0.0.11:9091/')">
+          <a id="Transmission_local">
             <div class="card card2 py-4 h-100">
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">Transmission</h4>
@@ -133,7 +133,7 @@
           </a>
         </div>
         <div class="col-md-4 mb-3 mb-md-0">
-          <a onclick="open_page('http://10.0.0.11:8888/gui/')">
+          <a id="Resilio">
             <div class="card card2 py-4 h-100">
               <div id="daan" class="card-body text-center">
                 <h4 class="text-uppercase m-0 txt">Resilio</h4>
