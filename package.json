@@ -1,0 +1,17 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "Webpage to manage my server",
+  "main": "blablabla.js",
+  "scripts": {
+    "build": "browserify ./js/alert.js -o ./js/alert.min.js",
+    "watch": "watchify ./js/alert.js -o ./js/alert.min.js"
+  },
+  "author": "Daan Wijns",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "sweetalert2": "^8.0.3",
+    "watchify": "^3.11.0"
+  }
+}

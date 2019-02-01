@@ -611,3 +611,14 @@ footer {
 .txt{
     color :   #64a19d;
 }
+
+
+
+
+
+
+/* sweetalert resize*/
+.swal-smal{
+    width: 90% !important;
+    max-width: 400px !important;
+}
