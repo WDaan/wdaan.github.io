@@ -1,7 +1,15 @@
 const Swal = require('sweetalert2');
 
+window.server_offline = server_offline;
 window.check_server = check_server;
 window.error_popup = error_popup;
+window.open_page = open_page;
+
+
+server_offline();
+//for initial load (if you're too fast to 
+//click the button before it can be checked)
+
 
 function error_popup() {
     if (timeout) {
@@ -29,7 +37,7 @@ function error_popup() {
 
 
 var local = false;
-var timeout = false;
+var timeout = true;
 
 /*remove local when not connected from my home*/
 $.getJSON("https://ipapi.co/json/", function (data) {
@@ -47,7 +55,7 @@ $.getJSON("https://ipapi.co/json/", function (data) {
 
 function check_server() {
     var http = new XMLHttpRequest();
-    http.timeout = 3000;
+    http.timeout = 5000;
 
     http.ontimeout = function (e) {
         timeout = true;
