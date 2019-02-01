@@ -47,7 +47,7 @@ $.getJSON("https://ipapi.co/json/", function (data) {
 
 function check_server() {
     var http = new XMLHttpRequest();
-    http.timeout = 5000;
+    http.timeout = 3000;
 
     http.ontimeout = function (e) {
         timeout = true;
