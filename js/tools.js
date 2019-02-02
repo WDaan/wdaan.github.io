@@ -64,7 +64,7 @@ function set_progress(total) {
                 circle.setText(type + "\n" + amount + 'GB');
             }
         });
-        circle.text.style.fontSize = '1.6em';
+        circle.text.style.fontSize = '1.3em';
     });
 
 };
