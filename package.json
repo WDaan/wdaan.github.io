@@ -5,12 +5,14 @@
   "main": "blablabla.js",
   "scripts": {
     "build": "browserify ./js/alert.js -o ./js/alert.min.js",
-    "watch": "watchify ./js/alert.js -o ./js/alert.min.js"
+    "watch": "watchify ./js/alert.js -o ./js/alert.min.js",
+    "watch-extra" : "watchify ./js/tools.js -o ./js/tools.min.js"
   },
   "author": "Daan Wijns",
   "license": "ISC",
   "dependencies": {
     "browserify": "^16.2.3",
+    "progressbar.js": "^1.0.1",
     "sweetalert2": "^8.0.3",
     "watchify": "^3.11.0"
   }
