@@ -1,65 +1,39 @@
-var ProgressBar = require('progressbar.js')
-var line = new ProgressBar.Line('#container');
+const cheerio = require("cheerio");
+const request = require("request");
+const ProgressBar = require('progressbar.js')
+
 
 //check if server offline & init circles for offline
 var offline = true;
 var circle = [];
 
 function check_server() {
-    var http = new XMLHttpRequest();
-    http.timeout = 5000;
-
-    http.ontimeout = function (e) {
-        offline = true;
-        console.log("Server timed out ...");
-        check_server();
-        console.log("checking again...");
-    }
-
-    http.onerror = function (e) {
-        offline = true;
-        console.log("Server offline :/");
-    };
-
-    http.open("GET", "https://wdaan.me", /*async*/ true);
-    http.onreadystatechange = function () {
-        if (http.readyState == 4 && http.status == 200) {
-            console.log("Server online! ^__^");
-            offline = false;
-            request_data();
+    request({
+            url: "https://yeet.wdaan.me/php/index.php",
+            json: false,
+        },
+        function (error, response, body) {
+            if (!error && response.statusCode === 200) {
+                //console.log(body); // Print the json response
+                let $ = cheerio.load(body);
+                data = $('#array');
+                console.log(data.text());
+                data_arr = JSON.parse(data.text().substring(7));
+                save_values(data_arr);
+                this.offline = false;
+            }
         }
-    };
-    try {
-        http.send(null);
-    } catch (exception) {}
+    );
 };
 
 check_server();
 init_circles();
 
-function request_data() {
-    $.ajax({
-        'type': "GET",
-        'global': false,
-        'dataType': 'json',
-        'url': "https://wdaan.me/mijn_info/info.php",
-        'data': {
-            'request': "",
-            'target': 'arrange_url',
-            'method': 'method_target'
-        },
-        'success': function (data) {
-            //console.log(data);
-            save_values(data);
-        },
-    });
-};
-
 function save_values(info) {
     var total = info[0];
     var free = info[1];
-    var media = info[2];
-    var daan = info[3];
+    var media = info[3];
+    var daan = info[2];
     document.getElementById('container').setAttribute("data-value", free);
     document.getElementById('container').setAttribute("text", 'Free');
     document.getElementById('container2').setAttribute("data-value", daan);
@@ -68,7 +42,6 @@ function save_values(info) {
     document.getElementById('container3').setAttribute("text", 'Media');
     set_progress(total);
 };
-
 
 
 function init_circles() {
@@ -83,8 +56,6 @@ function init_circles() {
         circle[i].setText("Server offline");
     })
 };
-
-
 
 /* progress bar */
 function set_progress(total) {

@@ -1,14 +1,8 @@
 const Swal = require('sweetalert2');
 
-window.server_offline = server_offline;
 window.check_server = check_server;
 window.error_popup = error_popup;
 window.open_page = open_page;
-
-
-server_offline();
-//for initial load (if you're too fast to 
-//click the button before it can be checked)
 
 
 function error_popup() {
@@ -31,10 +25,7 @@ function error_popup() {
             customClass: 'swal-smal'
         });
     }
-
 }
-
-
 
 var local = false;
 var timeout = true;
@@ -43,48 +34,16 @@ var timeout = true;
 $.getJSON("https://ipapi.co/json/", function (data) {
     var ip = data.ip;
     if (ip === "178.118.138.211") {
-        $("#local").removeClass("hide");
         console.log("dag Daan ^_^");
         local = true;
-    } else {
-        $("#local").addClass("hide");
     }
 });
 
 
-
 function check_server() {
-    var http = new XMLHttpRequest();
-    http.timeout = 5000;
+    set_links();
+}
 
-    http.ontimeout = function (e) {
-        timeout = true;
-        server_offline();
-        console.log("Server timed out ...");
-        check_server();
-        console.log("checking again...");
-    }
-
-    http.onerror = function (e) {
-        timeout = false;
-        server_offline();
-        console.log("Server offline :/");
-    };
-
-    http.open("GET", "https://wdaan.me", /*async*/ true);
-    http.onreadystatechange = function () {
-        if (http.readyState == 4 && http.status == 200) {
-            set_links();
-            console.log("Server online! ^__^");
-        }
-    };
-    try {
-        http.send(null);
-    } catch (exception) {}
-};
-
-
-/*remote functions always, local necessary check with boolean*/
 function set_links() {
     var f1 = 'open_page(' + FileRun.name + ')';
     document.getElementById("FileRun").setAttribute("onclick", f1);
@@ -92,54 +51,41 @@ function set_links() {
     document.getElementById("Plex").setAttribute("onclick", f2);
     var f3 = 'open_page(' + Transmission.name + ')';
     document.getElementById("Transmission").setAttribute("onclick", f3);
-    //doesnt matter cuz when not local they don't show anyway
-    var f4 = 'open_page(' + Plex_local.name + ')';
-    document.getElementById("Plex_local").setAttribute("onclick", f4);
-    var f5 = 'open_page(' + Transmission_local.name + ')';
-    document.getElementById("Transmission_local").setAttribute("onclick", f5);
+    var f4 = 'open_page(' + Ombi.name + ')';
+    document.getElementById("Ombi").setAttribute("onclick", f4);
+    var f5 = 'open_page(' + Portainer.name + ')';
+    document.getElementById("Portainer").setAttribute("onclick", f5);
     var f6 = 'open_page(' + Resilio.name + ')';
     document.getElementById("Resilio").setAttribute("onclick", f6);
-
-};
-
-function server_offline() {
-    var f = "error_popup()";
-    document.getElementById("FileRun").setAttribute("onclick", f);
-    document.getElementById("Plex").setAttribute("onclick", f);
-    document.getElementById("Transmission").setAttribute("onclick", f);
-    document.getElementById("Plex_local").setAttribute("onclick", f);
-    document.getElementById("Transmission_local").setAttribute("onclick", f);
-    document.getElementById("Resilio").setAttribute("onclick", f);
 };
 
 function open_page(name) {
     window.open(name.url);
 };
 
-
 var page_array = [
     (FileRun = {
         name: "FileRun",
-        url: "https://wdaan.me?page=login&action=login&nonajax=1&username=woofy&password=woofyiscute"
+        url: "https://files.wdaan.me?page=login&action=login&nonajax=1&username=woofy&password=woofyiscute"
     }),
     (Plex = {
         name: "Plex",
-        url: "http://plex.wdaan.me"
+        url: "https://plex.wdaan.me"
     }),
     (Transmission = {
         name: "Transmission",
-        url: "http://tor.wdaan.me"
+        url: "https://transmission.wdaan.me"
     }),
-    (Plex_local = {
-        name: "Plex_local",
-        url: "https://app.plex.tv/desktop"
+    (Ombi = {
+        name: "Ombi",
+        url: "https://ombi.wdaan.me"
     }),
-    (Transmission_local = {
-        name: "Transmission_local",
-        url: "http://10.0.0.11:9091/"
+    (Portainer = {
+        name: "Portainer",
+        url: "https://portainer.wdaan.me"
     }),
     (Resilio = {
         name: "Resilio",
-        url: "http://10.0.0.11:8888/gui/"
+        url: "https://sync.wdaan.me"
     })
 ];

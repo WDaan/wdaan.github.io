@@ -6,14 +6,16 @@
   "scripts": {
     "build": "browserify ./js/alert.js -o ./js/alert.min.js",
     "watch": "watchify ./js/alert.js -o ./js/alert.min.js",
-    "watch-extra" : "watchify ./js/tools.js -o ./js/tools.min.js"
+    "watch-extra": "watchify ./js/tools.js -o ./js/tools.min.js"
   },
   "author": "Daan Wijns",
   "license": "ISC",
   "dependencies": {
     "browserify": "^16.2.3",
+    "cheerio": "^1.0.0-rc.2",
     "progressbar.js": "^1.0.1",
-    "sweetalert2": "^8.0.3",
-    "watchify": "^3.11.0"
+    "request": "^2.88.0",
+    "sweetalert2": "^8.5.0",
+    "watchify": "^3.11.1"
   }
 }
