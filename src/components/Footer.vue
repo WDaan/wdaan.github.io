@@ -1,7 +1,7 @@
 <template>
-    <footer class="bg-black small text-center text-white-50">
+    <v-footer height="auto" class="bg-black small text-center text-white-50">
         <div class="container">Ur a nosey one, aren't ya?</div>
-    </footer>
+    </v-footer>
 </template>
 
 <script lang="ts">

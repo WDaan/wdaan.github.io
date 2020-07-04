@@ -1,9 +1,11 @@
 <template>
-    <div class="layout">
+    <v-app class="bg-black">
         <NavBar />
-        <router-view />
+        <v-main class="bg-black">
+            <router-view />
+        </v-main>
         <Footer />
-    </div>
+    </v-app>
 </template>
 
 <script lang="ts">
@@ -17,11 +19,3 @@ export default Vue.extend({
     components: { NavBar, Footer }
 })
 </script>
-
-<style>
-.layout {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-</style>

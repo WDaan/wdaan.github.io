@@ -17,7 +17,7 @@
                             <h4 class="text-uppercase m-0 txt">
                                 {{ app.name }}
                             </h4>
-                            <hr class="my-4 white" />
+                            <hr class="my-4 mx-auto" />
                             <div class="small text-black-50 txt">
                                 {{ app.description }}
                             </div>

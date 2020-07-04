@@ -1,7 +1,16 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top"
+        id="mainNav"
+        :class="scrollPosY ? 'navbar-shrink' : ''"
+    >
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Daan Wijns</a>
+            <a
+                class="navbar-brand"
+                href="#page-top"
+                style="font-weight: 500; font-size: 1.4em"
+                >Daan Wijns</a
+            >
             <button
                 class="navbar-toggler navbar-toggler-right"
                 type="button"
@@ -19,9 +28,9 @@
                     <router-link to="/" class="nav-item mt-2">
                         <a class="js-scroll-trigger navbar-item">Apps</a>
                     </router-link>
-                    <li class="nav-item mt-2">
-                        <a class="navbar-item" href="html/radio.html">Radio</a>
-                    </li>
+                    <router-link to="/radio" class="nav-item mt-2">
+                        <a class="navbar-item">Radio</a>
+                    </router-link>
                     <router-link to="/projects" class="nav-item mt-2">
                         <a class="navbar-item">Projects</a>
                     </router-link>
@@ -31,12 +40,26 @@
     </nav>
 </template>
 
-
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class NavBar extends Vue {}
+export default class NavBar extends Vue {
+    scrollPosY = false
+
+    mounted() {
+        this.updateScroll()
+        window.addEventListener('scroll', this.updateScroll)
+    }
+
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.updateScroll)
+    }
+
+    updateScroll() {
+        this.scrollPosY = window.scrollY > 0
+    }
+}
 </script>
 
 <style>
