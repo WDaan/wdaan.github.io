@@ -11,8 +11,8 @@
 <script lang="ts">
 import Vue from 'vue'
 
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
+import NavBar from '@/components/NavBar.vue'
+import Footer from '@/components/Footer.vue'
 
 export default Vue.extend({
     name: 'App',

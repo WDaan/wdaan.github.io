@@ -10,16 +10,19 @@
                 </div>
             </div>
         </header>
-        <section id="Apps" class="contact-section bg-black">
-            <AppsSection />
-        </section>
+        <AppsSection />
     </div>
 </template>
 
-<script>
-import AppsSection from '@/components/AppsSection'
-export default {
+<script lang="ts">
+import { Component } from 'vue-property-decorator'
+import AppsSection from '@/components/AppsSection.vue'
+
+import SetNavTitle from '@/mixins/SetNavTitle'
+
+@Component({
     name: 'Home',
     components: { AppsSection }
-}
+})
+export default class Home extends SetNavTitle {}
 </script>

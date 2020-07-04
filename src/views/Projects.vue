@@ -5,7 +5,7 @@
                 <div class="col-md-4 mb-3 mb-md-0">
                     <a target="_blank" href="https://wdaan.github.io/myNotes/">
                         <div class="card card1 py-4 h-100">
-                            <div class="card-body text-center ">
+                            <div class="card-body text-center">
                                 <h4 class="text-uppercase m-0 txt">Notes</h4>
                                 <hr class="my-4 mx-auto" />
                                 <div class="small text-black-50 txt">
@@ -21,7 +21,7 @@
                         href="https://wdaan.github.io/Survival_of_the_Fittest/"
                     >
                         <div class="card card1 py-4 h-100">
-                            <div class="card-body text-center ">
+                            <div class="card-body text-center">
                                 <h4 class="text-uppercase m-0 txt">
                                     Survival of the Fittest
                                 </h4>
@@ -55,3 +55,14 @@
         </div>
     </section>
 </template>
+
+<script lang="ts">
+import { Component } from 'vue-property-decorator'
+
+import SetNavTitle from '@/mixins/SetNavTitle'
+
+@Component({
+    name: 'Projects'
+})
+export default class Projects extends SetNavTitle {}
+</script>

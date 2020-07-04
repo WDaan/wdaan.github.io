@@ -44,15 +44,18 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Component } from 'vue-property-decorator'
+import SetNavTitle from '@/mixins/SetNavTitle'
 
 interface RadioStation {
     name: string
     url: string
 }
 
-@Component
-export default class AppsSection extends Vue {
+@Component({
+    name: 'Radio'
+})
+export default class AppsSection extends SetNavTitle {
     private initialStations: RadioStation[] = [
         {
             name: 'TOPRADIO',
@@ -157,17 +160,16 @@ export default class AppsSection extends Vue {
     }
 
     setStation(station: RadioStation) {
-        this.$refs.radio.src = station.url
+        const radio: any = this.$refs.radio
+        radio.src = station.url
     }
 
     startTime() {
         const today = new Date()
-        this.$refs.time.innerHTML =
-            today.getHours() +
-            ':' +
-            this.checkTime(today.getMinutes()) +
-            ':' +
-            this.checkTime(today.getSeconds())
+        const time: any = this.$refs.time
+        const minutes = this.checkTime(today.getMinutes())
+        const seconds = this.checkTime(today.getSeconds())
+        time.innerHTML = today.getHours() + ':' + minutes + ':' + seconds
     }
 
     checkTime(i: number): string {

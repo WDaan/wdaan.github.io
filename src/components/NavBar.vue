@@ -7,31 +7,41 @@
         <div class="container">
             <a
                 class="navbar-brand"
-                href="#page-top"
                 style="font-weight: 500; font-size: 1.4em"
-                >Daan Wijns</a
+                >{{ navBarTitle }}</a
             >
             <button
                 class="navbar-toggler navbar-toggler-right"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarResponsive"
-                aria-controls="navbarResponsive"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+                @click="toggleMenu"
             >
                 Menu
-                <i class="fas fa-bars"></i>
+                <v-icon small color="#64a19d">mdi-menu</v-icon>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div
+                :class="menu ? '' : 'collapse'"
+                class="navbar-collapse"
+                id="navbarResponsive"
+            >
                 <ul class="navbar-nav ml-auto">
-                    <router-link to="/" class="nav-item mt-2">
+                    <router-link
+                        to="/"
+                        @click.native="toggleMenu"
+                        class="nav-item mt-2"
+                    >
                         <a class="js-scroll-trigger navbar-item">Apps</a>
                     </router-link>
-                    <router-link to="/radio" class="nav-item mt-2">
+                    <router-link
+                        to="/radio"
+                        @click.native="toggleMenu"
+                        class="nav-item mt-2"
+                    >
                         <a class="navbar-item">Radio</a>
                     </router-link>
-                    <router-link to="/projects" class="nav-item mt-2">
+                    <router-link
+                        to="/projects"
+                        @click.native="toggleMenu"
+                        class="nav-item mt-2"
+                    >
                         <a class="navbar-item">Projects</a>
                     </router-link>
                 </ul>
@@ -42,10 +52,15 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import { mapState } from 'vuex'
 
-@Component
+@Component({
+    computed: mapState(['navBarTitle'])
+})
 export default class NavBar extends Vue {
     scrollPosY = false
+    menu = false
+    disabled = false
 
     mounted() {
         this.updateScroll()
@@ -59,10 +74,14 @@ export default class NavBar extends Vue {
     updateScroll() {
         this.scrollPosY = window.scrollY > 0
     }
+
+    toggleMenu() {
+        this.menu = !this.menu
+    }
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 #mainNav {
     min-height: 56px;
     background-color: #fff;
@@ -82,6 +101,11 @@ export default class NavBar extends Vue {
 #mainNav .navbar-toggler:hover {
     background-color: #64a19d;
     color: #fff;
+
+    i {
+        color: #fff !important;
+        transition: color ease 0.5s;
+    }
 }
 
 #mainNav .navbar-brand {
@@ -104,6 +128,17 @@ export default class NavBar extends Vue {
 #mainNav .navbar-nav .nav-item:focus {
     outline: 0;
     background-color: transparent;
+}
+
+@media (max-width: 991px) {
+    ul {
+        a {
+            color: #64a19d !important;
+        }
+        a:hover {
+            color: #4f837f !important;
+        }
+    }
 }
 
 @media (min-width: 992px) {
