@@ -43,7 +43,7 @@ export default class AppsSection extends Vue {
     apps: App[] = [
         {
             name: 'Filerun',
-            url: 'https://files.wdaan.tools/',
+            url: 'https://files.wdaan.xyz/',
             description: 'Web based file browser'
         },
         {
@@ -53,23 +53,23 @@ export default class AppsSection extends Vue {
         },
         {
             name: 'Qbit',
-            url: 'https://qbitreg.wdaan.tools',
+            url: 'https://qbitreg.wdaan.xyz',
             description: 'Remote downloaden van overal'
         },
         {
             name: 'Portainer',
-            url: 'https://portainer.wdaan.tools',
+            url: 'https://portainer.wdaan.xyz',
             description: 'Manage docker containers'
         },
         {
             name: 'Nginx',
-            url: 'https://nginx.wdaan.tools',
+            url: 'https://nginx.wdaan.xyz',
             description: 'Reverse proxy manager'
         },
         {
-            name: 'Resilio',
-            url: 'https://sync.wdaan.tools',
-            description: 'Bestanden synchroniseren'
+            name: 'Vuetorrent',
+            url: 'https://web.wdaan.xyz',
+            description: 'Vuetorrent download count'
         }
     ]
 
