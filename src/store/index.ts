@@ -1,17 +1,14 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createStore } from 'vuex'
 
-Vue.use(Vuex)
-
-export default new Vuex.Store({
-    state: {
-        navBarTitle: 'Daan Wijns'
-    },
-    mutations: {
-        SET_NAVBAR_TITLE(state, title: string) {
-            state.navBarTitle = title
-        }
-    },
-    actions: {},
-    modules: {}
+export default createStore({
+  state: {
+    navBarTitle: 'Daan Wijns'
+  },
+  mutations: {
+    SET_NAVBAR_TITLE(state, title: string) {
+      state.navBarTitle = title
+    }
+  },
+  actions: {},
+  modules: {}
 })

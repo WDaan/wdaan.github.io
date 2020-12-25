@@ -1,84 +1,89 @@
 <template>
-    <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top"
-        id="mainNav"
-        :class="scrollPosY ? 'navbar-shrink' : ''"
-    >
-        <div class="container">
-            <a
-                class="navbar-brand"
-                style="font-weight: 500; font-size: 1.4em"
-                >{{ navBarTitle }}</a
-            >
-            <button
-                class="navbar-toggler navbar-toggler-right"
-                @click="toggleMenu"
-            >
-                Menu
-                <v-icon small color="#64a19d">mdi-menu</v-icon>
-            </button>
-            <div
-                :class="menu ? '' : 'collapse'"
-                class="navbar-collapse"
-                id="navbarResponsive"
-            >
-                <ul class="navbar-nav ml-auto">
-                    <router-link
-                        to="/"
-                        @click.native="toggleMenu"
-                        class="nav-item mt-2"
-                    >
-                        <a class="js-scroll-trigger navbar-item">Apps</a>
-                    </router-link>
-                    <router-link
-                        to="/radio"
-                        @click.native="toggleMenu"
-                        class="nav-item mt-2"
-                    >
-                        <a class="navbar-item">Radio</a>
-                    </router-link>
-                    <router-link
-                        to="/projects"
-                        @click.native="toggleMenu"
-                        class="nav-item mt-2"
-                    >
-                        <a class="navbar-item">Projects</a>
-                    </router-link>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav
+    class="navbar navbar-expand-lg navbar-light fixed-top"
+    id="mainNav"
+    :class="scrollPosY ? 'navbar-shrink' : ''"
+  >
+    <div class="container">
+      <a
+        class="navbar-brand"
+        style="font-weight: 500; font-size: 1.4em"
+      >
+        {{ navBarTitle }}
+      </a
+      >
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        @click="toggleMenu"
+      >
+        Menu
+        <v-icon small color="#64a19d">mdi-menu</v-icon>
+      </button>
+      <div
+        :class="menu ? '' : 'collapse'"
+        class="navbar-collapse"
+        id="navbarResponsive"
+      >
+        <ul class="navbar-nav ml-auto">
+          <router-link
+            to="/"
+            @click="toggleMenu"
+            class="nav-item mt-2"
+          >
+            <a class="js-scroll-trigger navbar-item">Apps</a>
+          </router-link>
+          <router-link
+            to="/radio"
+            @click="toggleMenu"
+            class="nav-item mt-2"
+          >
+            <a class="navbar-item">Radio</a>
+          </router-link>
+          <router-link
+            to="/projects"
+            @click="toggleMenu"
+            class="nav-item mt-2"
+          >
+            <a class="navbar-item">Projects</a>
+          </router-link>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-import { mapState } from 'vuex'
+import { defineComponent } from 'vue'
 
-@Component({
-    computed: mapState(['navBarTitle'])
-})
-export default class NavBar extends Vue {
-    scrollPosY = false
-    menu = false
-    disabled = false
-
-    mounted() {
-        this.updateScroll()
-        window.addEventListener('scroll', this.updateScroll)
+export default defineComponent({
+  data() {
+    return {
+      scrollPosY: false,
+      menu: false,
+      disabled: false
     }
+  },
 
-    beforeDestroy() {
-        window.removeEventListener('scroll', this.updateScroll)
-    }
+  mounted() {
+    this.updateScroll()
+    window.addEventListener('scroll', this.updateScroll)
+  },
 
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.updateScroll)
+  },
+
+  methods: {
     updateScroll() {
-        this.scrollPosY = window.scrollY > 0
-    }
+      this.scrollPosY = window.scrollY > 0
+    },
 
     toggleMenu() {
-        this.menu = !this.menu
+      this.menu = !this.menu
     }
-}
+  }
+
+})
 </script>
 
 <style scoped lang="scss">
