@@ -2,13 +2,13 @@
   <div>
     <header class="bg-white shadow">
       <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold leading-tight text-gray-900">
+        <h1 class="text-2xl md:text-3xl font-bold leading-tight text-gray-900">
           Vuetorrent Download Count
         </h1>
       </div>
     </header>
     <main>
-      <div class="mx-auto mt-10 mb-5 w-10/12 md:w-8/12">
+      <div class="mx-auto mt-10 mb-5 w-11/12 md:w-8/12">
         <div class="shadow-lg overflow-hidden rounded border-gray-200">
           <table class="w-full bg-white text-center">
             <thead class="bg-teal-500 text-white">
