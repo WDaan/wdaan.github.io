@@ -8,9 +8,9 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <router-link to="/" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</router-link>
-              <router-link to="/projects" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</router-link>
-              <router-link to="/vuetorrent" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Vuetorrent</router-link>
+              <router-link to="/" active-class="bg-gray-900 text-white" class="navlink">Home</router-link>
+              <router-link to="/projects" active-class="bg-gray-900 text-white" class="navlink">Projects</router-link>
+              <router-link to="/vuetorrent" active-class="bg-gray-900 text-white" class="navlink">Vuetorrent</router-link>
             </div>
           </div>
         </div>
@@ -54,9 +54,9 @@
     <div class="md:hidden" >
       <transition name="grow">
         <div v-show="menuOpen" class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <router-link to="/" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</router-link>
-          <router-link to="/projects" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</router-link>
-          <router-link to="/vuetorrent" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Vuetorrent</router-link>
+          <router-link to="/" active-class="bg-gray-900 text-white" class="block navlink">Home</router-link>
+          <router-link to="/projects" active-class="bg-gray-900 text-white" class="block navlink">Projects</router-link>
+          <router-link to="/vuetorrent" active-class="bg-gray-900 text-white" class="block navlink">Vuetorrent</router-link>
         </div>
       </transition>
     </div>
@@ -93,7 +93,7 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style scoped>
 .grow-enter-active {
     max-height: 0px;
     opacity: 0;
@@ -109,5 +109,12 @@ export default defineComponent({
 .grow-leave-to {
     opacity: 0;
     max-height: 0px;
+}
+.text-white {
+    color: white !important;
+}
+
+.navlink {
+    @apply text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium;
 }
 </style>
