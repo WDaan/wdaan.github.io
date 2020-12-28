@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid">
+  <div class="h-screen bg-gray-50">
     <NavBar />
-    <div class="lg:container lg:mx-auto container-block">
+    <div>
       <router-view/>
     </div>
   </div>
