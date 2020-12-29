@@ -11,6 +11,7 @@
         <div class="mt-10">
           <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             <a
+              style="cursor: pointer"
               target="_blank"
               v-for="app in apps"
               :key="app.name"
@@ -18,20 +19,7 @@
               <div class="flex">
                 <div class="flex-shrink-0">
                   <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <!-- Heroicon name: globe-alt -->
-                    <svg
-                      class="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                    </svg>
+                    <img :src="app.icon"/>
                   </div>
                 </div>
                 <div class="ml-4">
@@ -58,6 +46,7 @@ interface App {
     name: string;
     url: string;
     description: string;
+    icon: string;
 }
 
 export default defineComponent({
@@ -67,27 +56,32 @@ export default defineComponent({
         {
           name: 'Filerun',
           url: 'https://files.wdaan.xyz/',
-          description: 'Web based file browser'
+          description: 'Web based file browser',
+          icon: require('@/assets/logos/folder.svg')
         },
         {
           name: 'Plex',
           url: 'https://app.plex.tv',
-          description: 'Films en Series streamen van overal'
+          description: 'Stream Movies and TV Shows',
+          icon: require('@/assets/logos/plex.svg')
         },
         {
           name: 'Portainer',
           url: 'https://portainer.wdaan.xyz',
-          description: 'Manage docker containers'
+          description: 'Manage Docker containers',
+          icon: require('@/assets/logos/anchor.svg')
         },
         {
           name: 'Nginx',
           url: 'https://nginx.wdaan.xyz',
-          description: 'Reverse proxy manager'
+          description: 'Reverse proxy manager',
+          icon: require('@/assets/logos/cloud.svg')
         },
         {
           name: 'Vuetorrent',
-          url: 'https://web.wdaan.xyz',
-          description: 'Vuetorrent download count'
+          url: '/vuetorrent',
+          description: 'Vuetorrent download count',
+          icon: require('@/assets/logos/vue.svg')
         }
       ] as App[]
     }
