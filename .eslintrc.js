@@ -79,6 +79,7 @@ module.exports = {
     'vue/space-infix-ops': 'error',
     'arrow-spacing': ['error', { before: true, after: true }],
     'no-multi-spaces': ['error'],
-    'newline-before-return': ['error']
+    'newline-before-return': ['error'],
+    'vue/object-curly-spacing': ['error', 'always']
   }
 }
