@@ -1,12 +1,14 @@
 <template>
   <div class="py-4 bg-gray-50">
-    <header class="bg-white shadow">
-      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-2xl md:text-3xl font-bold leading-tight text-gray-900">
-          Vuetorrent Download Count
-        </h1>
+    <div class="grid grid-cols-1 gap-2 mt-5">
+      <div class="mx-auto w-3/4 rounded overflow-hidden shadow-lg bg-white">
+        <div class="px-4 py-2">
+          <div class="font-bold text-teal-500 text-4xl mb-2 text-center">
+            VueTorrent Download Counter
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
     <main>
       <div class="mx-auto mt-10 mb-5 w-11/12 md:w-8/12">
         <div class="shadow-lg overflow-hidden rounded border-gray-200">

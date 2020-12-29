@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <h1 class="text-gray-50 text-2xl">Yeet</h1>
+            <router-link to="/" class="text-gray-50 text-2xl">Yeet</router-link>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
@@ -15,7 +15,6 @@
           </div>
         </div>
         <div class="-mr-2 flex md:hidden">
-          <!-- Mobile menu button -->
           <button
             @click="menuOpen = !menuOpen"
             class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white transition duration-150 ease-in-out">
