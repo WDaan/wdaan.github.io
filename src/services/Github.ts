@@ -18,7 +18,6 @@ class Repo {
     public link: string
     public stars: number
     constructor(res: any) {
-      console.log(res)
       this.name = res.name
       this.description = res.description
       this.link = res.html_url
