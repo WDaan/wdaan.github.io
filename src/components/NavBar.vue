@@ -4,13 +4,13 @@
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <router-link to="/" class="text-gray-50 text-2xl">Yeet</router-link>
+            <a @click='goTo("/")' class="text-gray-50 text-2xl">Yeet</a>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <router-link to="/" active-class="bg-gray-900 text-white" class="navlink">Home</router-link>
-              <router-link to="/projects" active-class="bg-gray-900 text-white" class="navlink">Projects</router-link>
-              <router-link to="/vuetorrent" active-class="bg-gray-900 text-white" class="navlink">Vuetorrent</router-link>
+              <a @click='goTo("/")' active-class="bg-gray-900 text-white" class="navlink">Home</a>
+              <a @click='goTo("/projects")' active-class="bg-gray-900 text-white" class="navlink">Projects</a>
+              <a @click='goTo("/vuetorrent")' active-class="bg-gray-900 text-white" class="navlink">Vuetorrent</a>
             </div>
           </div>
         </div>
@@ -53,9 +53,9 @@
     <div class="md:hidden" >
       <transition name="grow">
         <div v-show="menuOpen" class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <router-link to="/" active-class="bg-gray-900 text-white" class="block navlink">Home</router-link>
-          <router-link to="/projects" active-class="bg-gray-900 text-white" class="block navlink">Projects</router-link>
-          <router-link to="/vuetorrent" active-class="bg-gray-900 text-white" class="block navlink">Vuetorrent</router-link>
+          <a @click='goTo("/")' active-class="bg-gray-900 text-white" class="block navlink">Home</a>
+          <a @click='goTo("/projects")' active-class="bg-gray-900 text-white" class="block navlink">Projects</a>
+          <a @click='goTo("/vuetorrent")' active-class="bg-gray-900 text-white" class="block navlink">Vuetorrent</a>
         </div>
       </transition>
     </div>
@@ -86,6 +86,10 @@ export default defineComponent({
   methods: {
     updateScroll() {
       this.scrollPosY = window.scrollY > 0
+    },
+    goTo(url: string) {
+      this.menuOpen = false
+      this.$router.push(url)
     }
   }
 
