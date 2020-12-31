@@ -86,6 +86,9 @@ export default defineComponent({
   },
   methods: {
     openUrl(url: string) {
+      if (url.includes('vuetorrent')) {
+        return this.$router.push('/vuetorrent')
+      }
       window.open(url)
     }
   }
