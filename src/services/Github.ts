@@ -9,7 +9,7 @@ class Release {
         assets: any
     ) {
       this.downloadCount = assets[0].download_count || 0
-      this.date = new Date(date).toLocaleString()
+      this.date = new Date(date).toLocaleDateString()
     }
 }
 class Repo {
