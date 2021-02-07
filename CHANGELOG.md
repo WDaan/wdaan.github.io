@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/WDaan/wdaan.github.io/compare/v1.0.0...v1.0.1) (2021-02-07)
+
+
+### Bug Fixes
+
+* remove app links & reference to private domain ([4648fdb](https://www.github.com/WDaan/wdaan.github.io/commit/4648fdb8ef7398749a63ebe944feacb99055763f))
+
 ## 1.0.0 (2021-02-07)
 
 
