@@ -5,6 +5,8 @@ on:
       - master
 jobs:
   setup-release:
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -17,8 +19,9 @@ jobs:
           release-type: node
           package-name: wdaan.github.io
   build-and-deploy:
-    runs-on: ubuntu-latest
     needs: setup-release
+    if: ${{ needs.setup-release.outputs.release_created }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
