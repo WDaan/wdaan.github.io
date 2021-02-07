@@ -46,7 +46,9 @@ class Github {
         .then((res: any) => res.data)
         .then((data: any) => {
           releases = data.map((release: any) => {
-            total += release.assets[0].download_count || 0
+            if (release.assets && release.assets.length) {
+              total += release.assets[0].download_count || 0
+            }
 
             return new Release(release.name, release.published_at, release.assets)
           })
