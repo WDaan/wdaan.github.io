@@ -75,7 +75,7 @@ export default defineComponent({
   },
   methods: {
     openUrl(url: string) {
-      return this.$router.push(`/${url}`)
+      return this.$router.push(url)
     }
   }
 })
