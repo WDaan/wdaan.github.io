@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.3](https://www.github.com/WDaan/wdaan.github.io/compare/v1.0.2...v1.0.3) (2021-02-07)
+
+
+### Bug Fixes
+
+* open urls ([99b8718](https://www.github.com/WDaan/wdaan.github.io/commit/99b871828889410c38b7d436eb04d932cbbf59be))
+
 ### [1.0.2](https://www.github.com/WDaan/wdaan.github.io/compare/v1.0.1...v1.0.2) (2021-02-07)
 
 
